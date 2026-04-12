@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f9faf7",
+                        "background": "#f9faf7",
+                        "on-background": "#191c1b",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#271900",
+                        "primary-fixed-dim": "#a7ccb7",
+                        "surface-container-high": "#e7e8e6",
+                        "outline-variant": "#c0c9c1",
+                        "outline": "#717973",
+                        "surface-tint": "#4F7C61",
+                        "on-surface-variant": "#414943",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#e4bf81",
+                        "surface-variant": "#e2e3e0",
+                        "on-tertiary-fixed-variant": "#5b430f",
+                        "secondary-fixed-dim": "#afcebb",
+                        "inverse-surface": "#2e312f",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#d6e8dd",
+                        "inverse-on-surface": "#f0f1ee",
+                        "primary": "#4F7C61",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5a7465",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9dad8",
+                        "on-secondary-fixed-variant": "#314c3e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#4d3603",
+                        "surface-container-highest": "#e2e3e0",
+                        "on-secondary-container": "#4f6a5b",
+                        "on-primary-container": "#243b2e",
+                        "on-secondary-fixed": "#052014",
+                        "inverse-primary": "#a7ccb7",
+                        "tertiary-container": "#674d1a",
+                        "surface": "#f9faf7",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#002112",
+                        "on-primary-fixed-variant": "#224f39",
+                        "surface-container": "#edeeeb",
+                        "on-surface": "#191c1b",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#e6c182",
+                        "surface-container-low": "#f3f4f1",
+                        "primary-fixed": "#c7e4d3",
+                        "secondary-fixed": "#cbead6",
+                        "tertiary-fixed": "#ffdea7",
+                        "primary-container": "#4F7C61"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"],
+                        "display": ["Playfair Display", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            vertical-align: middle
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none
+        }
+        .fiber-texture {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDK4oZhwdinQwUFvQrO3YwX0GOD-6MLCR1eSuF4F1NeUtjBvsdnFbVzTIdZFJh4nX7KhlaGi95OfWR3UliZhOkwuvAEk-EdXkdbdOL08b1CcQMDu6U7l4K3Rl3X58wRTEblnFx4URhnPeEE9LPYhHxb6WdTsZXjkdCyIFYMaYXktT7_maXSlapW5ga--FFwozDZV0NOxvYCvSnq-iM_hQq3i69Ig26rhnNkzK3NrjO8YRABA07Ri0iJDmhmK6pE7nTxmlg-6CQWcxvC);
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body leading-relaxed selection:bg-primary/30 selection:text-on-primary-container">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface-bright fiber-texture">
+<div class="max-w-[1280px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-16 py-20">
+<!-- Left: Product Image -->
+<div class="relative z-10 flex justify-center lg:justify-start">
+<div class="relative w-full max-w-md aspect-[4/5]">
+<div class="absolute inset-0 bg-primary/10 rounded-[4rem] rotate-3 -z-10 translate-x-4"></div>
+<img alt="ReOil filtration device" class="w-full h-full object-cover rounded-[3rem] shadow-[0_12px_48px_rgba(25,28,27,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYE_sNdz_bxMMyH2THM767rowzRZ9AFQjtjdBl2R1IDWv11_TIAgpNSP8hCClFMMkgB_etAdRFNGNtRDCFGjsY3tsYQQA3IBzfBAcdeZtzBVIqoMJCQWOQMjC2sMIy2JFQvEy9ktiDplb6sWH7Pf5vfldoIRMekvnC73s7ATTWhYwrAr11Hc5u3DsORyqGBwGIw15JhVOLlO-vaSUJ78QnJbS6JGmOR0MkKckeUds-q1AyK-1TuhCl71vFCeLUsQa5yuKAXt25w3L-"/>
+</div>
+</div>
+<!-- Right: Content -->
+<div class="flex flex-col gap-6">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container text-[10px] font-extrabold uppercase tracking-[0.2em] w-fit rounded-full">
+                    Home Grease Filtration Unit
+                </span>
+<h1 class="text-7xl md:text-9xl font-extrabold tracking-tighter text-primary">ReOil</h1>
+<div class="space-y-4">
+<p class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface">「讓廢油，在流入水管前停下來」</p>
+<p class="text-lg md:text-xl font-medium text-on-surface-variant font-display italic">Stop grease before it enters the drain.</p>
+</div>
+<div class="flex flex-wrap gap-4 mt-8">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold text-sm flex items-center gap-3 shadow-lg hover:translate-y-[-2px] transition-transform">
+                        了解產品 Explore Product
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-xl font-bold text-sm flex items-center gap-3 transition-colors hover:bg-outline-variant/30">
+                        觀看影片 Watch Video
+                        <span class="material-symbols-outlined text-sm">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+<!-- Awards Showcase -->
+<section class="py-32 bg-surface">
+<div class="max-w-[1280px] mx-auto px-10 text-center">
+<h2 class="text-label uppercase tracking-[0.4em] text-outline mb-4">Awards &amp; Recognition</h2>
+<h3 class="text-4xl font-bold text-primary mb-20">獲獎肯定</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Award 1 -->
+<div class="group bg-surface-container-lowest p-12 rounded-[2rem] text-left transition-all duration-500 hover:shadow-[0_32px_64px_-16px_rgba(79,124,97,0.15)]">
+<div class="flex items-center gap-6 mb-8">
+<div class="w-16 h-16 bg-tertiary-fixed-dim rounded-2xl flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">workspace_premium</span>
+</div>
+<div>
+<p class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Product Design</p>
+<h4 class="text-2xl font-bold text-on-surface">MUSE Design Awards</h4>
+</div>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-8">Silver Winner - Recognizing excellence in sustainable home appliances and innovative industrial design approach for environmental protection.</p>
+<div class="w-full h-px bg-outline-variant/20 mb-8"></div>
+<span class="text-tertiary font-display italic text-lg">2026 Silver Winner</span>
+</div>
+<!-- Award 2 -->
+<div class="group bg-surface-container-lowest p-12 rounded-[2rem] text-left transition-all duration-500 hover:shadow-[0_32px_64px_-16px_rgba(79,124,97,0.15)]">
+<div class="flex items-center gap-6 mb-8">
+<div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">badge</span>
+</div>
+<div>
+<p class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Academic Research</p>
+<h4 class="text-2xl font-bold text-on-surface">為桃園做研究</h4>
+</div>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-8">潛力研究獎 - 針對地方性水環境議題提出具備商業轉化與社會影響力之創新廢油解決方案，獲得高度學術肯定。</p>
+<div class="w-full h-px bg-outline-variant/20 mb-8"></div>
+<span class="text-primary font-display italic text-lg">2025 潛力研究獎</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Statistics -->
+<section class="py-32 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 fiber-texture pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-10 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-20 text-center">
+<div class="space-y-6">
+<h5 class="text-5xl md:text-7xl font-display font-bold text-white">40 萬公噸</h5>
+<p class="text-white/80 font-medium text-lg px-8">台灣家庭每年產出的廚餘廢油估算總量</p>
+</div>
+<div class="space-y-6">
+<h5 class="text-5xl md:text-7xl font-display font-bold text-white">1cc : 180L</h5>
+<p class="text-white/80 font-medium text-lg px-8">僅 1cc 的廢油即可造成 180 公升的水域汙染</p>
+</div>
+<div class="space-y-6">
+<h5 class="text-5xl md:text-7xl font-display font-bold text-white">1,600 件/年</h5>
+<p class="text-white/80 font-medium text-lg px-8">全台因油脂造成水管阻塞之申報修繕次數</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Features -->
+<section class="py-40 bg-surface">
+<div class="max-w-[1280px] mx-auto px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+<div class="max-w-xl">
+<h2 class="text-label uppercase tracking-[0.4em] text-outline mb-4">Core Innovation</h2>
+<h3 class="text-5xl font-bold text-primary leading-tight">重新定義家用廢油處理的每一道程序</h3>
+</div>
+<p class="text-on-surface-variant max-w-xs text-lg">我們融合了永續材料與智慧科技，將複雜的環保行為轉化為直覺的居家日常。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Feature 1 -->
+<div class="flex flex-col">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">compost</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface mb-4">天然椰殼纖維</h4>
+<p class="text-on-surface-variant leading-relaxed">採用高效吸油的椰殼纖維作為濾芯基礎，天然有機且具備極佳的疏水親油特性。</p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">light_mode</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface mb-4">智慧燈號提示</h4>
+<p class="text-on-surface-variant leading-relaxed">內建高精度感測器，透過光學折射判斷濾材飽和度，即時以柔和燈號提醒更換。</p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">eco</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface mb-4">可堆肥循環</h4>
+<p class="text-on-surface-variant leading-relaxed">使用過的濾材可直接進入堆肥系統，實現從廚房到土壤的零浪費閉環設計。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Explore More Grid (Bento Style) -->
+<section class="pb-40 bg-surface">
+<div class="max-w-[1280px] mx-auto px-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 min-h-[700px]">
+<!-- Box 1: Issue Background -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] bg-stone-900">
+<img alt="Wastewater grease issue" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6OCdqoDZGpcsMt-wU-jGv2YYLY1Fk3XwKS1ZUa3nUVmM6dUvDTYEDj7_aawOeDqcsUCYE0I2fwYMnEZuHB8ukymdf2D24-4Kwk0EleweNQZkfaRGEqd2V0lOgV1BvV87deyj_uL5A1TkJ_LMUT0JgGo9Zk11alBYyOjorVubYtTsgLD-GmRgTvsjYqM-MdehXIRb2CK-FKQB78jD2oZk3JErqhxt13-wbLBGB4GnKacb0M3t8mULFcSJK5dIWajGHe7OVgy7GHpS8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12">
+<span class="text-xs font-bold tracking-widest text-primary-fixed-dim uppercase mb-4 block">Our Mission</span>
+<h4 class="text-4xl font-bold text-white mb-6">議題背景</h4>
+<button class="flex items-center gap-2 text-white/80 group-hover:text-white transition-colors">
+                            了解更多 <span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+</div>
+<!-- Box 2: Product Detail -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] bg-stone-100">
+<img alt="Product design details" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcez2dp0ItgU3RBCFjt75kKqVM2LSXtDhunOIWOOyGfxrHrcVEigTf0lHKjaev3LOExf2Ocd0yIYnydKj9lJS4PjbrZqP1IrEbrGRFSZ8vfLjdIakrFHiYOlBV3rzsVJY_Ct4RQMnEr7Vit1-Sbnidsk56Xba8xtDpk2cg5nZVNmYQM1WyCiw-1kWrLzT2-946Sk77TD7jA58u0VilyjM0XvDQiFnfgWB9O3gMAKuvFNrbf_R7n5WkCcd0Pol9kC2d0C2tK8UedRE4"/>
+<div class="absolute inset-0 bg-gradient-to-b from-white/20 to-primary/40"></div>
+<div class="absolute bottom-10 left-10">
+<h4 class="text-3xl font-bold text-white">產品介紹</h4>
+</div>
+</div>
+<!-- Box 3: Research Result -->
+<div class="md:col-span-5 group relative overflow-hidden rounded-[2.5rem] bg-stone-200">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-primary/20 transition-colors"></div>
+<div class="p-12 h-full flex flex-col justify-end">
+<span class="material-symbols-outlined text-5xl text-primary mb-8" data-weight="fill">biotech</span>
+<h4 class="text-3xl font-bold text-primary mb-4">研究成果</h4>
+<p class="text-on-surface-variant line-clamp-2">深度解析椰殼纖維對不同油脂飽和度的吸收數據與環境降解報告。</p>
+</div>
+</div>
+<!-- Box 4: Circular Economy -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-[2.5rem] bg-primary">
+<img alt="Green circular economy" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2s9rpmiPXui1xk7z_197WxmL5QBHIwEM75VtBJmRMzfaaojNRLtpvUkpAtY4nnIAcJnx43b9rt8CGfkqtGFkSvaGU3rqlhHayZYm6az-Ag8LOtdjpNlXIDTnNmb1T741cAS99hS_tIW5n2shBadJ1r4oZE9G1M5vyp-2iaU8l52N7v2UogJ_rI3nFAutlRm_H0Atg7iu0JFVBXaNKkOnax6uNqfxWjou1JP-Qbb72cO0SIm_o88Pjsyg_IH3gDwTW60e7nUdWw-VO"/>
+<div class="absolute inset-0 bg-black/10"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
+<h4 class="text-5xl font-extrabold text-white mb-6">循環經濟</h4>
+<p class="text-white max-w-md">我們追求的並非單純的過濾，而是將廢棄油脂轉化為生態循環中的養分。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="layout.js"></script>
+</body></html>

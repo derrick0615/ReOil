@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ReOil | Resource Center</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e312e",
+                    "primary-fixed-dim": "#a1d2b2",
+                    "surface": "#f9faf5",
+                    "tertiary-container": "#8e6e2c",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#e7e9e4",
+                    "outline-variant": "#c1c9c1",
+                    "secondary-container": "#fed65b",
+                    "tertiary-fixed": "#ffdea5",
+                    "secondary": "#735c00",
+                    "surface-tint": "#3b674e",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f3f4ef",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#fff9f4",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e2e3de",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-tertiary-fixed": "#261900",
+                    "primary-container": "#4f7c61",
+                    "primary": "#37634a",
+                    "on-primary-fixed": "#002111",
+                    "on-primary-container": "#e8ffed",
+                    "outline": "#717972",
+                    "on-background": "#1a1c19",
+                    "on-surface": "#1a1c19",
+                    "surface-bright": "#f9faf5",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-variant": "#e2e3de",
+                    "surface-dim": "#d9dad6",
+                    "inverse-primary": "#a1d2b2",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#edeee9",
+                    "tertiary": "#735615",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed": "#ffe088",
+                    "on-surface-variant": "#414943",
+                    "primary-fixed": "#bdeecd",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#234f37",
+                    "background": "#f9faf5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1ec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9faf5; color: #1a1c19; }
+        .glass-panel {
+            background: rgba(249, 250, 245, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .editorial-underline {
+            position: relative;
+            text-decoration: none;
+        }
+        .editorial-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .editorial-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<main class="max-w-[1440px] mx-auto px-6 md:px-24 py-16 md:py-24 space-y-32">
+<!-- Header Section -->
+<header class="max-w-4xl">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-semibold mb-4 block">Resource Center</span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-primary leading-tight">
+                Knowledge &amp; <br/>Ecological Assets.
+            </h1>
+<p class="mt-8 text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+                Access our complete archive of research, visual documentations, and ecological reports. We believe in the transparency of our process and the accessibility of our results.
+            </p>
+</header>
+<!-- Downloadables Section -->
+<section class="space-y-12" id="downloadables">
+<div class="flex items-baseline justify-between border-b border-outline-variant/15 pb-6">
+<h2 class="text-3xl font-bold tracking-tight text-primary">Downloadables</h2>
+<span class="text-sm text-on-surface-variant italic font-label">Current Version: 2024.Q3</span>
+</div>
+<!-- Bento Grid Layout for Resources -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Large Card: Full Report -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between min-h-[400px]">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">Full Sustainability Report</h3>
+<p class="text-on-surface-variant max-w-xs">A comprehensive 120-page document detailing our oil recycling metrics and ecological impact studies for the fiscal year.</p>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-on-surface-variant uppercase tracking-widest">PDF / 14.2 MB</span>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-primary-container active:scale-95 flex items-center gap-2" href="#">
+                            Download <span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+<div class="absolute -bottom-8 -right-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">description</span>
+</div>
+</div>
+<!-- Product Intro -->
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="space-y-3">
+<span class="material-symbols-outlined text-primary">package_2</span>
+<h4 class="text-lg font-bold text-primary">Product Introduction</h4>
+<p class="text-sm text-on-surface-variant">Core specifications and ecological benefits of the ReOil system.</p>
+</div>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group editorial-underline w-fit mt-6" href="#">
+                        PDF (3.1 MB) <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- Video Link -->
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="space-y-3">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+<h4 class="text-lg font-bold text-primary">Brand Vision Video</h4>
+<p class="text-sm text-on-surface-variant">A visual journey through the lifecycle of recycled biolubricants.</p>
+</div>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group editorial-underline w-fit mt-6" href="#">
+                        Watch Online <span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+<!-- Exhibition Poster -->
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-8 flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-6">
+<div class="w-20 h-28 bg-white shadow-sm flex items-center justify-center border border-outline-variant/10">
+<img class="w-full h-full object-cover" data-alt="minimalist aesthetic poster design with ecological motifs and clean forest green typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSvgjR_PPbLccCngZPPPfhl11EqvcTlNckGu0qSf-NnP0oynnq37TtULwGTbbkalHdtNhhgu1dO5TWhFForc8NsrPJKNUdIDZyNxoPyirJUXHRwuXAE6DnDldp8uqzGz0wImkBX9MCFzhJKOfOxCjgKmbQT8nP5fThcqY-E_aN_J5OPPhrEaI61NyHBD4dxcm0KlOCuIyUiis38yYyFR1aZ9kdKaEbTztN019jC0uJe5-osOT9B8el-KI0Bw7nizl1S6UqeuW6lJ_"/>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary">2024 Exhibition Poster</h4>
+<p class="text-sm text-on-surface-variant">High-resolution print assets for gallery displays.</p>
+</div>
+</div>
+<a class="bg-primary/10 text-primary p-4 rounded-full hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined">download</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Awards Documentation Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center" id="awards">
+<div class="space-y-6">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold">Recognition</span>
+<h2 class="text-4xl font-bold text-primary leading-tight">Validated by the Global Design Community.</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                    Our commitment to ecological excellence and aesthetic rigor has been recognized by international juries. Explore the official documentation and jury notes of our awarded projects.
+                </p>
+<div class="pt-4 flex flex-col gap-4">
+<a class="group flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border border-transparent hover:border-secondary/20 transition-all" href="https://museaward.com">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<span class="font-bold text-primary">MUSE Design Awards | Documentation</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl border border-transparent hover:border-secondary/20 transition-all" href="https://taoyuan.gov">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<span class="font-bold text-primary">Taoyuan Research Excellence Award</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden flex items-center justify-center p-12">
+<img class="w-full h-full object-contain opacity-90" data-alt="close-up of a gold award trophy with elegant curves reflecting soft studio light on a pale background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN4QJtEq_bKb7NuOQ4-KCopqo5AqkdbZPCQcueHjSaeJHSlbhbLAfdYmn0pPL5l7A3CWyWQoAU20WEwfyqdyGNVV6gAdtwZGjo-ANyw1jo29SlTcYwqAozz0LlVZEO45E5rdL7KEznysEDY8dk0waV13MSuP1WQG6w6Tzsm7xO9ctGUwcl_UERIoVLXi8Yb0ysUMOguxcU9_zy5Fi9qIidDhAlmnNIo5HLkUr9bNWPER556c4l4knuTP4ZPWZRybx6ZKIkoH9ynEKT"/>
+</div>
+<!-- Abstract Floating Element -->
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary-container/30 blur-[60px] -z-10 rounded-full"></div>
+</div>
+</section>
+<!-- Contact & Interaction Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-primary rounded-[2rem] overflow-hidden p-8 md:p-16" id="contact">
+<div class="lg:col-span-5 text-on-primary space-y-8">
+<h2 class="text-4xl font-bold">Request Private <br/>Data Archive.</h2>
+<p class="text-on-primary-container/80 text-lg">
+                    Seeking specific technical data for research or partnership? Submit a formal request and our technical team will provide the relevant documentation within 48 hours.
+                </p>
+<div class="space-y-6 pt-8">
+<div>
+<span class="text-xs uppercase tracking-[0.15em] text-primary-fixed-dim block mb-2">Connect with us</span>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all text-on-primary-container" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all text-on-primary-container" href="#">
+<span class="material-symbols-outlined">movie</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center hover:bg-on-primary hover:text-primary transition-all text-on-primary-container" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface rounded-2xl p-8 md:p-10">
+<form action="#" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-outline/50" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Unit / Organization</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-outline/50" placeholder="Institution Name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Email</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-outline/50" placeholder="email@address.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Purpose</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 outline-none transition-all text-on-surface-variant">
+<option>Research Partnership</option>
+<option>Press &amp; Media</option>
+<option>Investment Inquiry</option>
+<option>General Feedback</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-outline/50 resize-none" placeholder="Brief description of your request..." rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-bold tracking-wide hover:bg-primary-container transition-all active:scale-95" type="submit">
+                        Submit Request
+                    </button>
+</form>
+</div>
+</section>
+<!-- Social Media Section (Implicit in the Content Request) -->
+<section class="flex flex-col items-center gap-10 py-10 border-t border-outline-variant/10">
+<h3 class="text-sm font-label uppercase tracking-[0.3em] text-primary">Connect with the Ecosystem</h3>
+<div class="flex items-center gap-12">
+<a class="group flex flex-col items-center gap-3" href="#">
+<div class="w-14 h-14 rounded-full border border-outline-variant group-hover:bg-primary group-hover:border-primary flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">photo_camera</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Instagram</span>
+</a>
+<a class="group flex flex-col items-center gap-3" href="#">
+<div class="w-14 h-14 rounded-full border border-outline-variant group-hover:bg-primary group-hover:border-primary flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">share</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary">Facebook</span>
+</a>
+<a class="group flex flex-col items-center gap-3" href="#">
+<div class="w-14 h-14 rounded-full border border-outline-variant group-hover:bg-primary group-hover:border-primary flex items-center justify-center transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">video_library</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary">YouTube</span>
+</a>
+</div>
+</section>
+</main>
+<script src="layout.js"></script>
+</body></html>

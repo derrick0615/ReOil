@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2e312e",
+                    "primary-fixed-dim": "#a1d2b2",
+                    "surface": "#f9faf5",
+                    "tertiary-container": "#8e6e2c",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#e7e9e4",
+                    "outline-variant": "#c1c9c1",
+                    "secondary-container": "#fed65b",
+                    "tertiary-fixed": "#ffdea5",
+                    "secondary": "#735c00",
+                    "surface-tint": "#3b674e",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f3f4ef",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#fff9f4",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e2e3de",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-fixed": "#241a00",
+                    "on-tertiary-fixed": "#261900",
+                    "primary-container": "#4f7c61",
+                    "primary": "#37634a",
+                    "on-primary-fixed": "#002111",
+                    "on-primary-container": "#e8ffed",
+                    "outline": "#717972",
+                    "on-background": "#1a1c19",
+                    "on-surface": "#1a1c19",
+                    "surface-bright": "#f9faf5",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "surface-variant": "#e2e3de",
+                    "surface-dim": "#d9dad6",
+                    "inverse-primary": "#a1d2b2",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#edeee9",
+                    "tertiary": "#735615",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed": "#ffe088",
+                    "on-surface-variant": "#414943",
+                    "primary-fixed": "#bdeecd",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#234f37",
+                    "background": "#f9faf5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1ec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-data { font-family: 'Georgia', 'Times New Roman', serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed-variant">
+<!-- Hero Section -->
+<section class="relative h-[716px] flex items-center justify-center overflow-hidden px-12">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Close-up of a scientific laboratory setting with high-end glass equipment and soft green botanical accents in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd2EyMjLkUY4Fgr1sMpmuILOlYMe_hFq8etheNavxo4XQ6q7U1ojU81zGS6aTuk9cZl_qYPw7i-6pRLVcfojQLnR9ZIuC7FfWMc6_lKbO3ATs9PvvbxOMbhAjxLmZ7M8-jIEVoFnYq2mmlWvFHt915bb7Vy3GHnuZXmyGf7vxxB4daE8XkgrizHRRYxhLQwoziqIFHJ62itRI3Ehn7poUnuIuv0WET1lIe5BFsiUoItEPQB8lT7DhDFcZpCq9rxldrij4r_ChlwE57"/>
+</div>
+<div class="relative z-20 text-center max-w-4xl space-y-6">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs tracking-widest uppercase">Methodology</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-primary-container tracking-tighter">研究方法與實驗驗證</h1>
+<p class="text-xl md:text-2xl font-light text-on-primary-container/90 tracking-wide">86 份問卷 × 多組對照實驗</p>
+</div>
+</section>
+<!-- Market Survey Section -->
+<section class="py-32 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-bold text-primary">市場趨勢洞察</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">透過大規模問卷調查，我們挖掘出消費者對於廢棄油處理的真實痛點。數據顯示，永續性不再只是加分項，而是核心需求。</p>
+<div class="p-10 rounded-2xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm relative overflow-hidden">
+<div class="relative z-10">
+<div class="text-7xl font-headline font-extrabold text-primary mb-2 serif-data">85%</div>
+<p class="text-label-md font-bold uppercase tracking-widest text-secondary">Interest Highlight</p>
+<p class="mt-4 text-on-surface font-medium leading-snug">受訪者對於具備「全生物降解」功能的廢油處理產品表現出極高購買意願。</p>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[160px]">trending_up</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Mock Pie Chart -->
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col items-center justify-center space-y-6 min-h-[360px]">
+<span class="text-label-md font-bold text-on-surface-variant uppercase tracking-widest">Processing methods</span>
+<div class="relative w-48 h-48 rounded-full border-[20px] border-primary-container flex items-center justify-center">
+<div class="absolute inset-0 border-[20px] border-secondary border-t-transparent border-l-transparent rotate-45 rounded-full"></div>
+<span class="text-2xl font-headline font-bold text-primary serif-data">62%</span>
+</div>
+<div class="flex gap-4 text-xs font-label">
+<div class="flex items-center gap-2"><span class="w-3 h-3 bg-primary-container rounded-full"></span>Traditional</div>
+<div class="flex items-center gap-2"><span class="w-3 h-3 bg-secondary rounded-full"></span>Sustainable</div>
+</div>
+</div>
+<!-- Mock Bar Chart -->
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col justify-end space-y-4 min-h-[360px]">
+<span class="text-label-md font-bold text-on-surface-variant uppercase tracking-widest mb-4">User pain points</span>
+<div class="flex items-end justify-between h-40 gap-3">
+<div class="w-full bg-primary/20 rounded-t-lg h-[40%] flex items-end justify-center pb-2 text-[10px]">Mess</div>
+<div class="w-full bg-primary/40 rounded-t-lg h-[70%] flex items-end justify-center pb-2 text-[10px]">Smell</div>
+<div class="w-full bg-primary rounded-t-lg h-[90%] flex items-end justify-center pb-2 text-[10px] text-white">Disposal</div>
+</div>
+<p class="text-sm italic text-on-surface-variant text-center">Top categories identified by respondents</p>
+</div>
+</div>
+</div>
+</section>
+<!-- User Personas -->
+<section class="py-32 bg-surface-container-low px-12">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center max-w-2xl mx-auto space-y-4">
+<h2 class="text-4xl font-headline font-bold text-primary">核心使用者畫像</h2>
+<p class="text-on-surface-variant">我們針對兩大主力客群進行深度分析，確保 ReOil 的解決方案能精準對接生活情境。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Persona 1 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional chef or home manager in a minimalist white kitchen with natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfu3PjHqi4vAQQOyQ52RlG52XRfRy5sGQGmJVod6MHV5cJ-n-EBHQkkSiXtr-VIkwwzbQ33dHke2F5uoi4hFzKRdWsF-SZXZYlyC9KKptFkJx6wISZXragoIaClh95g30BYCt_Zc_F3-NqX1Y9H3feMyicpw6GtW48QJ-zXjTSjVsQ6DP-Hb05OB9JHohfnNcdgwaCoCHokYOvqASrxSmvp9q19_I9hyJnAxN3uk9eJFQ59BqRIApUoH1n1V6uY0RAU0YrMAAq3U2P"/>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-panel">
+<h3 class="text-2xl font-headline font-bold text-primary">Senior Home Manager</h3>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div class="space-y-2">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Needs</span>
+<p class="text-on-surface-variant">追求極致的廚房清潔度與系統化的廢棄物處理流程。對產品成分有極高的環保堅持。</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs">High Frequency</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs">Sustainability Conscious</span>
+</div>
+</div>
+</div>
+<!-- Persona 2 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern busy professional woman in a city apartment preparing a healthy quick meal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdIrJw2eiDiKWq7OP9zB8x1sHZV3ettateUb7jOu0EjMZ-WQaBlE-vqQlyjovEHxG-8jsP_2bAp2fJ39TYP-mf9sAX9I_OzH5WM9pisvYcM8J2J0YLDpN8WHlpEE9QGcGYYsbVPtyaS1Re18s-lIVOwR52KIYYcpQnYFr0n_SoswXuK9ugnp3yeLam5S8-TK_t_fBe3hkIYVQnB_HpS84pw8LhdAri17GZQBY3S21UVoX25xwxSCtl5VExeNrvG4C1dBrMUWyRzPn6"/>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-panel">
+<h3 class="text-2xl font-headline font-bold text-primary">Busy Professional</h3>
+</div>
+</div>
+<div class="p-8 space-y-6">
+<div class="space-y-2">
+<span class="text-xs font-label uppercase tracking-widest text-secondary font-bold">Needs</span>
+<p class="text-on-surface-variant">重視效率，希望在極短時間內完成油汙清理，不希望處理過程造成二次汙染或不便。</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs">Efficiency First</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs">Convenience Seeker</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experiment Results Table -->
+<section class="py-32 px-12 max-w-5xl mx-auto">
+<h2 class="text-4xl font-headline font-bold text-primary text-center mb-16">實驗數據對比</h2>
+<div class="overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/10">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary text-on-primary">
+<th class="p-6 font-headline font-semibold">評估指標 / 指標材質</th>
+<th class="p-6 font-headline font-semibold text-center">Coconut Fiber (ReOil)</th>
+<th class="p-6 font-headline font-semibold text-center">Synthetic Cotton</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-on-surface-variant">
+<tr>
+<td class="p-6 font-medium">Absorbing Capacity (油脂吸收量)</td>
+<td class="p-6 text-center serif-data text-primary font-bold text-lg">12.4g / unit</td>
+<td class="p-6 text-center serif-data">7.2g / unit</td>
+</tr>
+<tr class="bg-surface-container-low/30">
+<td class="p-6 font-medium">Permeability (滲透阻隔性)</td>
+<td class="p-6 text-center text-primary">
+<div class="flex justify-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+<td class="p-6 text-center">
+<div class="flex justify-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Compostable (生物降解性)</td>
+<td class="p-6 text-center">
+<span class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold">100% 降解</span>
+</td>
+<td class="p-6 text-center">
+<span class="inline-block px-4 py-1 rounded-full bg-error/10 text-error text-sm font-bold">不可降解</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="mt-6 text-sm italic text-on-surface-variant text-center">*數據基於 20 攝氏度實驗室環境，使用 100ml 標準橄欖油樣品測試所得。</p>
+</section>
+<!-- Laboratory Photo Gallery (Bento Grid) -->
+<section class="py-32 px-12 bg-primary">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="space-y-4">
+<span class="text-xs font-label uppercase tracking-widest text-on-primary/60 font-bold">In Situ</span>
+<h2 class="text-4xl font-headline font-bold text-on-primary">實驗室現場紀錄</h2>
+</div>
+<div class="h-[1px] bg-on-primary/20 flex-grow mx-8 hidden md:block"></div>
+<p class="text-on-primary/80 max-w-xs text-sm">我們在封閉的受控環境中模擬各種極端烹飪條件，確保產品的耐用性與穩定性。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a clean, modern green-themed bio-laboratory with researchers in lab coats working with coconut husks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8uQ36nd4x2OT49E5xQncEQeiLlBkEWsfXduhLY5-ERH7jgnQmRT9AyAQdp1A8z2OJthONBdhkeZ8m17_dM-qJldLdiiRX6XqWElqchZCZTPSVv8ebZkm9BGU7H0WEHYWA0ng4JJjrdqr52GEUfjk9sZjikZRX-B5Eujv-9FOUu4GjCqQ1CYCl9K56xR3yPtu0H2Rnny021s0Z1bHR1BbR5fVgxqEKejzTyGN7jHkSTRpzpT_bQEca24xlt66Y_3i2H3zZaS-3w-qk"/>
+</div>
+<div class="md:col-span-2 rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of microscopic analysis of coconut fiber structure showing its porous absorbing qualities" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBljqMteM1CclGrnSwWTJd6CBebfPCZUP0Bb-fNR9qJ3qyv24S0v4zepoi6Yo0iATkDvM2a3PG_zbnSOWE8AQmvHdNE5G7FEnlAswKG1FGZGVjFGaHZfdih5IGx9nnYRGpiRK-9nQshFSiYXMRZdtk4BVDlsswvaWp6YOAW0j31i0Il5rUzh9wRYHWsQoX2qsvxD0L3RRt1_tkDyOTy3niRm6LnOGZNt4C5gP62h5RLSYirr5FhQuysPMG-WhM2-C-LH5fqg8Esviub"/>
+</div>
+<div class="rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Top down view of various oil samples in petri dishes next to experimental fiber mats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0IfMnv4LT90Np-I6j1TlNhbVTmxbguRZ7cdqWyMkyICcIF_r37zBUcNn7x8o4dVxLfGtRlO0FYw9ImEzkA9XuOyF8McRyKx89nQczVjTpjGB_wZVUaXRRlLk4Qf1b7OdcKgJTw1OlwQKJlUPIZwgv3hgjR1HVN1cLsqbicdvLvmDNo8MbohLT0Zv0C17uFy82CvFGCyKFZZfcPKZxKurWTixdBa5OGth39zCjx58erAiQWoUp566RAFcFOk1tezAd-2KMBZsVCPmd"/>
+</div>
+<div class="rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of detailed measurement equipment in a lab with soft reflection of green lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrD98mMQpBrqaC5RPfdpEY3AanmOT9KVcdVXbtr6cVITV3uCSfmS1fGp2bNcpgzn3-ExlDzBQzoYi_lhD5kyb3GXz2vHcm8F41VLJvual5d6oQgLpIkYRTuaw1djb0c5dIF3qV8VthtCwRFNePnLCcDU-lb6khEuXyx-l9jpYlu6FXfJ9lzyzM2jTNUvmqgY94_KgtQz_XWzsZtWIPFDTcpPxr5zXpLjTelbIMxB0e0h1u50Kr4oWkaAA2eBfFuq3q7sEVAHLJsVrr"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA / Transition -->
+<section class="py-24 px-12 text-center bg-surface">
+<div class="max-w-2xl mx-auto space-y-8">
+<h3 class="text-3xl font-headline font-bold text-primary">透明的研發歷程，構築信任的基礎。</h3>
+<p class="text-on-surface-variant leading-relaxed">每一項數據的背後，都是我們對「永續廚房」的承諾。ReOil 堅持用科學驗證每一滴廢油的最佳歸宿。</p>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 text-primary font-bold border-b-2 border-primary hover:pb-1 transition-all" href="#">
+                    閱讀完整研究報告
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<script src="layout.js"></script>
+</body></html>
