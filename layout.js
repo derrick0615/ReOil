@@ -128,7 +128,7 @@
         </div>
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
-          <a class="text-white/80 text-sm hover:text-white transition-colors" href="mailto:reoil.project@gmail.com">reoil.project@gmail.com</a>
+          <a class="text-white/80 text-sm hover:text-white transition-colors" href="mailto:derrick.cy.huang@gmail.com">derrick.cy.huang@gmail.com</a>
         </div>
       </div>
     </div>
@@ -138,9 +138,9 @@
     <div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="text-white/40 text-[10px] tracking-widest uppercase">© 2025 ReOil Project · 國立臺北商業大學 創意科技與產品設計系 115級專題 · 指導教授：洪綾珠</p>
       <div class="flex gap-6">
-        <a class="text-white/40 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
-        <a class="text-white/40 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
-        <a class="text-white/40 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-lg">language</span></a>
+        <a class="text-white/40 hover:text-white transition-colors" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="material-symbols-outlined text-lg">photo_camera</span></a>
+        <a class="text-white/40 hover:text-white transition-colors" href="mailto:derrick.cy.huang@gmail.com" title="Email"><span class="material-symbols-outlined text-lg">mail</span></a>
+        <a class="text-white/40 hover:text-white transition-colors" href="resources.html#contact" title="聯絡我們"><span class="material-symbols-outlined text-lg">contact_page</span></a>
       </div>
     </div>
   </div>
