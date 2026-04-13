@@ -2,14 +2,14 @@
 (function () {
   const translations = {
     // ===== Layout (Navbar / Footer) =====
-    'nav.home': { zh: 'Home', en: 'Home' },
-    'nav.issue': { zh: 'Issue', en: 'Issue' },
-    'nav.product': { zh: 'Product', en: 'Product' },
-    'nav.howToUse': { zh: 'How to Use', en: 'How to Use' },
-    'nav.research': { zh: 'Research', en: 'Research' },
-    'nav.about': { zh: 'About', en: 'About' },
-    'nav.resources': { zh: 'Resources', en: 'Resources' },
-    'nav.exploreProduct': { zh: 'Explore Product', en: 'Explore Product' },
+    'nav.home': { zh: '首頁', en: 'Home' },
+    'nav.issue': { zh: '議題背景', en: 'Issue' },
+    'nav.product': { zh: '產品介紹', en: 'Product' },
+    'nav.howToUse': { zh: '使用方式', en: 'How to Use' },
+    'nav.research': { zh: '研究成果', en: 'Research' },
+    'nav.about': { zh: '關於我們', en: 'About' },
+    'nav.resources': { zh: '資源下載', en: 'Resources' },
+    'nav.exploreProduct': { zh: '探索產品', en: 'Explore Product' },
     'awards.muse': { zh: '🏆 2026 MUSE Design Awards · Silver Winner', en: '🏆 2026 MUSE Design Awards · Silver Winner' },
     'awards.taoyuan': { zh: '🏆 2025 為桃園做研究 · 潛力研究獎', en: '🏆 2025 Taoyuan Research · Potential Research Award' },
     'footer.desc': { zh: '致力於透過設計介入，解決家庭廢油排放造成的水環境負擔。讓環保成為不自覺的優雅生活習慣。', en: 'Committed to addressing the environmental burden of household waste oil through design intervention. Making sustainability an effortless part of everyday life.' },

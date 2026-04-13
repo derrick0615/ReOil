@@ -3,13 +3,13 @@
   const path = window.location.pathname.split('/').pop() || 'home.html';
 
   const navLinks = [
-    { label: 'Home', href: 'home.html' },
-    { label: 'Issue', href: 'issue.html' },
-    { label: 'Product', href: 'product.html' },
-    { label: 'How to Use', href: 'how-to-use.html' },
-    { label: 'Research', href: 'research.html' },
-    { label: 'About', href: 'about.html' },
-    { label: 'Resources', href: 'resources.html' },
+    { label: 'Home', href: 'home.html', i18n: 'nav.home' },
+    { label: 'Issue', href: 'issue.html', i18n: 'nav.issue' },
+    { label: 'Product', href: 'product.html', i18n: 'nav.product' },
+    { label: 'How to Use', href: 'how-to-use.html', i18n: 'nav.howToUse' },
+    { label: 'Research', href: 'research.html', i18n: 'nav.research' },
+    { label: 'About', href: 'about.html', i18n: 'nav.about' },
+    { label: 'Resources', href: 'resources.html', i18n: 'nav.resources' },
   ];
 
   function isActive(href) {
@@ -23,7 +23,7 @@
       const cls = active
         ? "font-['Inter'] font-bold tracking-tight uppercase text-xs text-on-surface border-b-2 border-[#4F7C61]/50 pb-1"
         : "font-['Inter'] font-bold tracking-tight uppercase text-xs text-on-surface-variant hover:text-primary transition-colors";
-      return `<a class="${cls}" href="${link.href}">${link.label}</a>`;
+      return `<a class="${cls}" href="${link.href}" data-i18n="${link.i18n}">${link.label}</a>`;
     })
     .join('\n');
 
@@ -34,7 +34,7 @@
       const cls = active
         ? 'block px-4 py-3 font-bold text-sm text-primary bg-primary/10 rounded-lg'
         : 'block px-4 py-3 font-bold text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 rounded-lg transition-colors';
-      return `<a class="${cls}" href="${link.href}">${link.label}</a>`;
+      return `<a class="${cls}" href="${link.href}" data-i18n="${link.i18n}">${link.label}</a>`;
     })
     .join('\n');
 
@@ -58,7 +58,7 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/20 px-6 py-4 space-y-1">
     ${mobileNavLinksHTML}
-    <a href="product.html" class="block px-4 py-3 mt-2 bg-primary text-on-primary text-center font-bold text-sm rounded-lg no-underline">Explore Product</a>
+    <a href="product.html" class="block px-4 py-3 mt-2 bg-primary text-on-primary text-center font-bold text-sm rounded-lg no-underline" data-i18n="nav.exploreProduct">Explore Product</a>
   </div>
 </nav>
 <!-- Awards Badge Strip -->
