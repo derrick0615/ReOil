@@ -48,7 +48,8 @@
       ${navLinksHTML}
     </div>
     <div class="flex items-center gap-4">
-      <a href="product.html" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider hover:opacity-80 transition-opacity active:scale-95 no-underline">Explore Product</a>
+      <a href="product.html" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider hover:opacity-80 transition-opacity active:scale-95 no-underline" data-i18n="nav.exploreProduct">Explore Product</a>
+      <button id="lang-toggle" onclick="window.ReOilI18n && window.ReOilI18n.toggleLang()" class="w-9 h-9 rounded-full border border-outline-variant text-xs font-bold text-on-surface-variant hover:bg-primary hover:text-on-primary hover:border-primary transition-all cursor-pointer">EN</button>
       <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors" aria-label="Open menu">
         <span class="material-symbols-outlined text-2xl">menu</span>
       </button>
@@ -63,9 +64,9 @@
 <!-- Awards Badge Strip -->
 <div class="w-full bg-tertiary-fixed-dim py-2 border-y border-tertiary-container/10 overflow-hidden">
   <div class="max-w-[1280px] mx-auto px-10 flex justify-center items-center gap-8 text-[10px] md:text-xs font-bold tracking-[0.2em] text-tertiary uppercase">
-    <span>🏆 2026 MUSE Design Awards · Silver Winner</span>
+    <span data-i18n="awards.muse">🏆 2026 MUSE Design Awards · Silver Winner</span>
     <span class="opacity-30">|</span>
-    <span>🏆 2025 為桃園做研究 · 潛力研究獎</span>
+    <span data-i18n="awards.taoyuan">🏆 2025 為桃園做研究 · 潛力研究獎</span>
   </div>
 </div>`;
 
@@ -94,24 +95,24 @@
     <!-- Brand & Info -->
     <div>
       <div class="text-xl font-bold text-white mb-4">ReOil</div>
-      <p class="font-['Inter'] leading-relaxed text-sm text-white/80 mb-8 max-w-xs">
+      <p class="font-['Inter'] leading-relaxed text-sm text-white/80 mb-8 max-w-xs" data-i18n="footer.desc">
         致力於透過設計介入，解決家庭廢油排放造成的水環境負擔。讓環保成為不自覺的優雅生活習慣。
       </p>
       <div class="space-y-2">
-        <p class="text-xs font-bold text-white uppercase tracking-widest">Department</p>
-        <p class="text-white/70 text-sm">國立臺北商業大學<br/>創意科技與產品設計系 115級專題</p>
+        <p class="text-xs font-bold text-white uppercase tracking-widest" data-i18n="footer.department">Department</p>
+        <p class="text-white/70 text-sm" data-i18n="footer.school">國立臺北商業大學<br/>創意科技與產品設計系 115級專題</p>
       </div>
     </div>
     <!-- Quick Links -->
     <div class="grid grid-cols-2 gap-8">
       <div>
-        <h5 class="text-white font-bold mb-6">Navigation</h5>
+        <h5 class="text-white font-bold mb-6" data-i18n="footer.navigation">Navigation</h5>
         <ul class="space-y-4">
           ${footerNavHTML}
         </ul>
       </div>
       <div>
-        <h5 class="text-white font-bold mb-6">Resources</h5>
+        <h5 class="text-white font-bold mb-6" data-i18n="footer.resources">Resources</h5>
         <ul class="space-y-4">
           ${footerResourcesHTML}
         </ul>
@@ -119,12 +120,12 @@
     </div>
     <!-- Contact -->
     <div class="bg-black/10 p-8 rounded-[2rem]">
-      <h5 class="text-white font-bold mb-6">Contact</h5>
-      <p class="text-white/70 text-xs mb-6">如有任何合作洽詢或專案相關問題，歡迎與我們聯繫。</p>
+      <h5 class="text-white font-bold mb-6" data-i18n="footer.contact">Contact</h5>
+      <p class="text-white/70 text-xs mb-6" data-i18n="footer.contactDesc">如有任何合作洽詢或專案相關問題，歡迎與我們聯繫。</p>
       <div class="space-y-4">
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">school</span>
-          <span class="text-white/80 text-sm">國立臺北商業大學<br/>創意科技與產品設計系</span>
+          <span class="text-white/80 text-sm" data-i18n="footer.schoolFull">國立臺北商業大學<br/>創意科技與產品設計系</span>
         </div>
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
@@ -136,7 +137,7 @@
   <!-- Copyright Row -->
   <div class="w-full bg-black/5 py-10 border-t border-white/10">
     <div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-white/40 text-[10px] tracking-widest uppercase">© 2025 ReOil Project · 國立臺北商業大學 創意科技與產品設計系 115級專題 · 指導教授：洪綾珠</p>
+      <p class="text-white/40 text-[10px] tracking-widest uppercase" data-i18n="footer.copyright">© 2025 ReOil Project · 國立臺北商業大學 創意科技與產品設計系 115級專題 · 指導教授：洪綾珠</p>
       <div class="flex gap-6">
         <a class="text-white/40 hover:text-white transition-colors" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="material-symbols-outlined text-lg">photo_camera</span></a>
         <a class="text-white/40 hover:text-white transition-colors" href="mailto:derrick.cy.huang@gmail.com" title="Email"><span class="material-symbols-outlined text-lg">mail</span></a>
@@ -153,6 +154,11 @@
   const existingFooter = document.getElementById('site-footer');
   if (!existingFooter) {
     document.body.insertAdjacentHTML('beforeend', footerHTML);
+  }
+
+  // Re-apply i18n translations to dynamically injected elements
+  if (window.ReOilI18n) {
+    window.ReOilI18n.applyTranslations(window.ReOilI18n.getLang());
   }
 
   // Mobile menu toggle
