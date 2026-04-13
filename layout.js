@@ -117,15 +117,19 @@
         </ul>
       </div>
     </div>
-    <!-- Newsletter -->
+    <!-- Contact -->
     <div class="bg-black/10 p-8 rounded-[2rem]">
-      <h5 class="text-white font-bold mb-6">Newsletter</h5>
-      <p class="text-white/70 text-xs mb-6">訂閱我們，獲取最新的永續產品進度與環保研究資訊。</p>
-      <div class="relative">
-        <input class="w-full bg-white/20 border-none rounded-xl px-4 py-3 text-white text-sm focus:ring-1 focus:ring-white placeholder:text-white/40" placeholder="Email Address" type="email"/>
-        <button class="absolute right-2 top-2 p-1.5 bg-white text-primary rounded-lg hover:bg-white/90 transition-colors">
-          <span class="material-symbols-outlined text-sm">arrow_forward</span>
-        </button>
+      <h5 class="text-white font-bold mb-6">Contact</h5>
+      <p class="text-white/70 text-xs mb-6">如有任何合作洽詢或專案相關問題，歡迎與我們聯繫。</p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-white/60 text-lg">school</span>
+          <span class="text-white/80 text-sm">國立臺北商業大學<br/>創意科技與產品設計系</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
+          <a class="text-white/80 text-sm hover:text-white transition-colors" href="mailto:reoil.project@gmail.com">reoil.project@gmail.com</a>
+        </div>
       </div>
     </div>
   </div>
