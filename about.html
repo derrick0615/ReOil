@@ -1,315 +1,337 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "inverse-surface": "#2e312e",
-                    "primary-fixed-dim": "#a1d2b2",
-                    "surface": "#f9faf5",
-                    "tertiary-container": "#8e6e2c",
-                    "on-secondary-container": "#745c00",
-                    "surface-container-high": "#e7e9e4",
-                    "outline-variant": "#c1c9c1",
-                    "secondary-container": "#fed65b",
-                    "tertiary-fixed": "#ffdea5",
-                    "secondary": "#735c00",
-                    "surface-tint": "#3b674e",
-                    "error": "#ba1a1a",
-                    "surface-container-low": "#f3f4ef",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-container": "#fff9f4",
-                    "on-secondary": "#ffffff",
-                    "surface-container-highest": "#e2e3de",
-                    "secondary-fixed-dim": "#e9c349",
-                    "on-secondary-fixed": "#241a00",
-                    "on-tertiary-fixed": "#261900",
-                    "primary-container": "#4f7c61",
-                    "primary": "#37634a",
-                    "on-primary-fixed": "#002111",
-                    "on-primary-container": "#e8ffed",
-                    "outline": "#717972",
-                    "on-background": "#1a1c19",
-                    "on-surface": "#1a1c19",
-                    "surface-bright": "#f9faf5",
-                    "on-tertiary-fixed-variant": "#5d4201",
-                    "surface-variant": "#e2e3de",
-                    "surface-dim": "#d9dad6",
-                    "inverse-primary": "#a1d2b2",
-                    "error-container": "#ffdad6",
-                    "surface-container": "#edeee9",
-                    "tertiary": "#735615",
-                    "on-secondary-fixed-variant": "#574500",
-                    "secondary-fixed": "#ffe088",
-                    "on-surface-variant": "#414943",
-                    "primary-fixed": "#bdeecd",
-                    "on-error-container": "#93000a",
-                    "on-error": "#ffffff",
-                    "on-primary-fixed-variant": "#234f37",
-                    "background": "#f9faf5",
-                    "tertiary-fixed-dim": "#e9c176",
-                    "on-tertiary": "#ffffff",
-                    "on-primary": "#ffffff",
-                    "inverse-on-surface": "#f0f1ec"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Inter"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
-            }
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-surface": "#2e312e",
+            "primary-fixed-dim": "#a1d2b2",
+            "surface": "#f9faf5",
+            "tertiary-container": "#8e6e2c",
+            "on-secondary-container": "#745c00",
+            "surface-container-high": "#e7e9e4",
+            "outline-variant": "#c1c9c1",
+            "secondary-container": "#fed65b",
+            "tertiary-fixed": "#ffdea5",
+            "secondary": "#735c00",
+            "surface-tint": "#3b674e",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f3f4ef",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-container": "#fff9f4",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#e2e3de",
+            "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00",
+            "on-tertiary-fixed": "#261900",
+            "primary-container": "#4f7c61",
+            "primary": "#37634a",
+            "on-primary-fixed": "#002111",
+            "on-primary-container": "#e8ffed",
+            "outline": "#717972",
+            "on-background": "#1a1c19",
+            "on-surface": "#1a1c19",
+            "surface-bright": "#f9faf5",
+            "on-tertiary-fixed-variant": "#5d4201",
+            "surface-variant": "#e2e3de",
+            "surface-dim": "#d9dad6",
+            "inverse-primary": "#a1d2b2",
+            "error-container": "#ffdad6",
+            "surface-container": "#edeee9",
+            "tertiary": "#735615",
+            "on-secondary-fixed-variant": "#574500",
+            "secondary-fixed": "#ffe088",
+            "on-surface-variant": "#414943",
+            "primary-fixed": "#bdeecd",
+            "on-error-container": "#93000a",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#234f37",
+            "background": "#f9faf5",
+            "tertiary-fixed-dim": "#e9c176",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "inverse-on-surface": "#f0f1ec"
           },
-        }
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Inter"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-mask {
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        }
-        .asymmetric-grid {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
-    </style>
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .editorial-mask {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+
+    .asymmetric-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  </style>
 </head>
+
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<main class="max-w-[1440px] mx-auto px-6 md:px-12 py-20 space-y-32">
-<section class="relative flex flex-col md:flex-row items-center gap-12" id="department-intro">
-<div class="w-full md:w-1/2 z-10">
-<span class="inline-block px-4 py-1 mb-6 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">
-                    學術傳承
-                </span>
-<h1 class="text-5xl md:text-7xl font-headline font-bold text-primary tracking-tight leading-none mb-8">
-                    國立臺北商業大學<br/>創意科技與產品設計系
-                </h1>
-<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                    結合生態探究與技術精準度，115 級專題代表 ReOil 在將廢棄油脂與循環經濟優雅結合的使命中，開創的全新里程碑。
-                </p>
-</div>
-<div class="w-full md:w-1/2 relative">
-<div class="aspect-square bg-surface-container-highest rounded-xl overflow-hidden shadow-sm">
-<img alt="department workspace" class="w-full h-full object-cover" data-alt="Modern architectural interior of a creative design studio with natural light streaming through large windows and minimalist industrial furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXigHiYZgUTi6nNWJ86XNkCdQZBdtW8mFnBD755ElGkW35tdLkZTvFy0LV4uvDWw9MsfphPNI537JAK4AAm52lDPhfjeQ986XP6OlSVuM1v1p4DxqfRyfrj5McD0PmnH2E3em7WgaZKGemuI31MpmL58QL4ffKuAdb-r6qohxF5kN4vOIW7c0bZFmtQX76Clndbgj0-L3QumPsSYgUW_wfkurYm1ArKf-enXCaRk0aZKA3TgK7BeXn5fpuylyWDw5jdt40WyAgBXcb"/>
-</div>
-<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-xl hidden md:flex items-center justify-center p-8">
-<span class="text-on-primary text-4xl font-headline font-extrabold text-center">115 級專題</span>
-</div>
-</div>
-</section>
-<section class="space-y-12" id="advisor">
-<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
-<h2 class="text-3xl font-headline font-bold text-primary mb-4">指導教授</h2>
-<div class="h-1 w-24 bg-tertiary-container rounded-full"></div>
-</div>
-<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row items-center gap-0 group">
-<div class="w-full md:w-2/5 aspect-square md:aspect-auto md:h-[500px] overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-7xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div class="w-full md:w-3/5 p-12 md:p-20 bg-surface-container-lowest">
-<span class="text-secondary font-bold tracking-widest text-sm uppercase block mb-2">專題指導</span>
-<h3 class="text-4xl font-headline font-bold text-primary mb-6">洪綾珠 助理教授</h3>
-<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
-                        洪綾珠老師在永續材料與循環經濟領域擁有豐富的教學與研究經驗，引導 ReOil 團隊在技術可行性與創意表達之間取得精妙的平衡。她的指導聚焦於生態責任與產品設計的交匯點，協助團隊將理念落地為可實踐的設計方案。
-                    </p>
-<div class="flex gap-4">
-<div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined">school</span>
-</div>
-<div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined">mail</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="space-y-16" id="team">
-<div class="flex flex-col items-start max-w-4xl">
-<h2 class="text-4xl font-headline font-bold text-primary mb-6">團隊成員</h2>
-<p class="text-on-surface-variant text-lg">五位各具專長的成員，以共同的永續信念為核心，攜手探索廢棄物轉化的未來可能。</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-<!-- Team Member 1 -->
-<div class="flex flex-col gap-6">
-<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div>
-<h4 class="text-xl font-headline font-bold text-primary">廖原磊</h4>
-<p class="text-sm text-on-surface-variant tracking-wider mt-1">專案統籌</p>
-</div>
-</div>
-<!-- Team Member 2 -->
-<div class="flex flex-col gap-6 mt-12 md:mt-0">
-<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div>
-<h4 class="text-xl font-headline font-bold text-primary">黃辰宇</h4>
-<p class="text-sm text-on-surface-variant tracking-wider mt-1">產品設計</p>
-</div>
-</div>
-<!-- Team Member 3 -->
-<div class="flex flex-col gap-6">
-<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div>
-<h4 class="text-xl font-headline font-bold text-primary">黃詩惠</h4>
-<p class="text-sm text-on-surface-variant tracking-wider mt-1">視覺設計</p>
-</div>
-</div>
-<!-- Team Member 4 -->
-<div class="flex flex-col gap-6 mt-12 md:mt-0">
-<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div>
-<h4 class="text-xl font-headline font-bold text-primary">羅子堯</h4>
-<p class="text-sm text-on-surface-variant tracking-wider mt-1">技術整合</p>
-</div>
-</div>
-<!-- Team Member 5 -->
-<div class="flex flex-col gap-6">
-<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
-</div>
-</div>
-<div>
-<h4 class="text-xl font-headline font-bold text-primary">李承祐</h4>
-<p class="text-sm text-on-surface-variant tracking-wider mt-1">材料研究</p>
-</div>
-</div>
-</div>
-</section>
-<section class="space-y-16" id="timeline">
-<div class="text-center">
-<h2 class="text-4xl font-headline font-bold text-primary mb-2">專題歷程</h2>
-<p class="text-on-surface-variant">追溯我們在生態創新道路上的發展軌跡。</p>
-</div>
-<div class="relative pt-12 pb-12">
-<!-- Timeline Line -->
-<div class="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-surface-container-high hidden md:block"></div>
-<div class="space-y-12 relative">
-<!-- Milestone 1 -->
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1 text-right hidden md:block">
-<h5 class="text-2xl font-headline font-bold text-primary">議題探索</h5>
-<p class="text-on-surface-variant mt-2">針對在地廢油循環與社區環境影響進行初步研究與資料蒐集。</p>
-</div>
-<div class="w-12 h-12 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center">
-<span class="text-on-primary text-xs font-bold">01</span>
-</div>
-<div class="flex-1 text-left">
-<div class="md:hidden">
-<h5 class="text-2xl font-headline font-bold text-primary">議題探索</h5>
-<p class="text-on-surface-variant mt-2">針對在地廢油循環與社區環境影響進行初步研究與資料蒐集。</p>
-</div>
-<span class="text-tertiary font-bold text-sm">第 1-3 個月</span>
-</div>
-</div>
-<!-- Milestone 2 -->
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1 text-right">
-<span class="text-tertiary font-bold text-sm">第 4-6 個月</span>
-<div class="md:hidden mt-2">
-<h5 class="text-2xl font-headline font-bold text-primary">原型開發</h5>
-<p class="text-on-surface-variant mt-2">反覆迭代硬體設計，並進行感測器校準與模組驗證。</p>
-</div>
-</div>
-<div class="w-12 h-12 rounded-full bg-primary-container border-4 border-surface z-10 flex items-center justify-center">
-<span class="text-on-primary-container text-xs font-bold">02</span>
-</div>
-<div class="flex-1 text-left hidden md:block">
-<h5 class="text-2xl font-headline font-bold text-primary">原型開發</h5>
-<p class="text-on-surface-variant mt-2">反覆迭代硬體設計，並進行感測器校準與模組驗證。</p>
-</div>
-</div>
-<!-- Milestone 3 -->
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1 text-right hidden md:block">
-<h5 class="text-2xl font-headline font-bold text-primary">實測驗證</h5>
-<p class="text-on-surface-variant mt-2">於校園餐廳與指定場域進行實際使用測試與數據蒐集。</p>
-</div>
-<div class="w-12 h-12 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center">
-<span class="text-on-primary text-xs font-bold">03</span>
-</div>
-<div class="flex-1 text-left">
-<div class="md:hidden">
-<h5 class="text-2xl font-headline font-bold text-primary">實測驗證</h5>
-<p class="text-on-surface-variant mt-2">於校園餐廳與指定場域進行實際使用測試與數據蒐集。</p>
-</div>
-<span class="text-tertiary font-bold text-sm">第 7-9 個月</span>
-</div>
-</div>
-<!-- Milestone 4 -->
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="flex-1 text-right">
-<span class="text-tertiary font-bold text-sm">第 10-12 個月</span>
-<div class="md:hidden mt-2">
-<h5 class="text-2xl font-headline font-bold text-primary">成果展覽</h5>
-<p class="text-on-surface-variant mt-2">完整呈現 ReOil 專案成果與生態系統架構的最終展示。</p>
-</div>
-</div>
-<div class="w-12 h-12 rounded-full bg-secondary-container border-4 border-surface z-10 flex items-center justify-center">
-<span class="text-on-secondary-container text-xs font-bold">04</span>
-</div>
-<div class="flex-1 text-left hidden md:block">
-<h5 class="text-2xl font-headline font-bold text-primary">成果展覽</h5>
-<p class="text-on-surface-variant mt-2">完整呈現 ReOil 專案成果與生態系統架構的最終展示。</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-primary text-on-primary rounded-xl p-12 md:p-20 relative overflow-hidden" id="acknowledgements">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container opacity-20 -mr-20 -mt-20 rounded-full"></div>
-<div class="relative z-10 max-w-3xl">
-<h2 class="text-4xl font-headline font-bold mb-8">致謝</h2>
-<p class="text-on-primary-container text-lg leading-relaxed mb-10">
-                    衷心感謝國立臺北商業大學提供的創意研究資源與支持，使本專題得以順利完成。同時特別感謝技術合作夥伴、實驗室工作人員，以及參與早期測試的在地協力者。您們對永續未來的堅持，是驅動我們持續創新的最大動力。
-                </p>
-<div class="flex flex-wrap gap-x-12 gap-y-6 opacity-80">
-<div>
-<p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">學術支持</p>
-<p class="font-headline font-medium">國立臺北商業大學</p>
-</div>
-<div>
-<p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">材料贊助</p>
-<p class="font-headline font-medium">永續材料研究基金</p>
-</div>
-<div>
-<p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">社區夥伴</p>
-<p class="font-headline font-medium">在地協力單位</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<script src="layout.js"></script>
-</body></html>
+  <main class="max-w-[1440px] mx-auto px-6 md:px-12 py-20 space-y-32">
+    <section class="relative flex flex-col md:flex-row items-center gap-12" id="department-intro">
+      <div class="w-full md:w-1/2 z-10">
+        <span
+          class="inline-block px-4 py-1 mb-6 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">
+          學術傳承
+        </span>
+        <h1 class="text-5xl md:text-7xl font-headline font-bold text-primary tracking-tight leading-none mb-8">
+          國立臺北商業大學<br />創意科技與產品設計系
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+          結合生態探究與技術精準度，115 級專題代表 ReOil 在將廢棄油脂與循環經濟優雅結合的使命中，開創的全新里程碑。
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 relative">
+        <div class="aspect-square bg-surface-container-highest rounded-xl overflow-hidden shadow-sm">
+          <img alt="department workspace" class="w-full h-full object-cover"
+            data-alt="Modern architectural interior of a creative design studio with natural light streaming through large windows and minimalist industrial furniture"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXigHiYZgUTi6nNWJ86XNkCdQZBdtW8mFnBD755ElGkW35tdLkZTvFy0LV4uvDWw9MsfphPNI537JAK4AAm52lDPhfjeQ986XP6OlSVuM1v1p4DxqfRyfrj5McD0PmnH2E3em7WgaZKGemuI31MpmL58QL4ffKuAdb-r6qohxF5kN4vOIW7c0bZFmtQX76Clndbgj0-L3QumPsSYgUW_wfkurYm1ArKf-enXCaRk0aZKA3TgK7BeXn5fpuylyWDw5jdt40WyAgBXcb" />
+        </div>
+        <div
+          class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-xl hidden md:flex items-center justify-center p-8">
+          <span class="text-on-primary text-4xl font-headline font-extrabold text-center">115 級專題</span>
+        </div>
+      </div>
+    </section>
+    <section class="space-y-12" id="advisor">
+      <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-headline font-bold text-primary mb-4">指導教授</h2>
+        <div class="h-1 w-24 bg-tertiary-container rounded-full"></div>
+      </div>
+      <div
+        class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row items-center gap-0 group">
+        <div class="w-full md:w-2/5 aspect-square md:aspect-auto md:h-[500px] overflow-hidden">
+          <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+            <span class="material-symbols-outlined text-7xl text-outline-variant/40">person</span>
+          </div>
+        </div>
+        <div class="w-full md:w-3/5 p-12 md:p-20 bg-surface-container-lowest">
+          <span class="text-secondary font-bold tracking-widest text-sm uppercase block mb-2">專題指導</span>
+          <h3 class="text-4xl font-headline font-bold text-primary mb-6">洪綾珠 教授</h3>
+          <p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+            洪綾珠老師在永續材料與循環經濟領域擁有豐富的教學與研究經驗，引導 ReOil 團隊在技術可行性與創意表達之間取得精妙的平衡。她的指導聚焦於生態責任與產品設計的交匯點，協助團隊將理念落地為可實踐的設計方案。
+          </p>
+          <div class="flex gap-4">
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="space-y-16" id="team">
+      <div class="flex flex-col items-start max-w-4xl">
+        <h2 class="text-4xl font-headline font-bold text-primary mb-6">團隊成員</h2>
+        <p class="text-on-surface-variant text-lg">五位各具專長的成員，以共同的永續信念為核心，攜手探索廢棄物轉化的未來可能。</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <!-- Team Member 1 -->
+        <div class="flex flex-col gap-6">
+          <div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-headline font-bold text-primary">廖原磊</h4>
+            <p class="text-sm text-on-surface-variant tracking-wider mt-1">專案統籌</p>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="flex flex-col gap-6 mt-12 md:mt-0">
+          <div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-headline font-bold text-primary">黃辰宇</h4>
+            <p class="text-sm text-on-surface-variant tracking-wider mt-1">產品設計</p>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="flex flex-col gap-6">
+          <div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-headline font-bold text-primary">黃詩惠</h4>
+            <p class="text-sm text-on-surface-variant tracking-wider mt-1">視覺設計</p>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="flex flex-col gap-6 mt-12 md:mt-0">
+          <div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-headline font-bold text-primary">羅子堯</h4>
+            <p class="text-sm text-on-surface-variant tracking-wider mt-1">技術整合</p>
+          </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="flex flex-col gap-6">
+          <div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden">
+            <div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
+              <span class="material-symbols-outlined text-6xl text-outline-variant/40">person</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xl font-headline font-bold text-primary">李承祐</h4>
+            <p class="text-sm text-on-surface-variant tracking-wider mt-1">材料研究</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="space-y-16" id="timeline">
+      <div class="text-center">
+        <h2 class="text-4xl font-headline font-bold text-primary mb-2">專題歷程</h2>
+        <p class="text-on-surface-variant">追溯我們在生態創新道路上的發展軌跡。</p>
+      </div>
+      <div class="relative pt-12 pb-12">
+        <!-- Timeline Line -->
+        <div class="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-surface-container-high hidden md:block"></div>
+        <div class="space-y-12 relative">
+          <!-- Milestone 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-right hidden md:block">
+              <h5 class="text-2xl font-headline font-bold text-primary">議題探索</h5>
+              <p class="text-on-surface-variant mt-2">針對在地廢油循環與社區環境影響進行初步研究與資料蒐集。</p>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center">
+              <span class="text-on-primary text-xs font-bold">01</span>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="md:hidden">
+                <h5 class="text-2xl font-headline font-bold text-primary">議題探索</h5>
+                <p class="text-on-surface-variant mt-2">針對在地廢油循環與社區環境影響進行初步研究與資料蒐集。</p>
+              </div>
+              <span class="text-tertiary font-bold text-sm">第 1-3 個月</span>
+            </div>
+          </div>
+          <!-- Milestone 2 -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-right">
+              <span class="text-tertiary font-bold text-sm">第 4-6 個月</span>
+              <div class="md:hidden mt-2">
+                <h5 class="text-2xl font-headline font-bold text-primary">原型開發</h5>
+                <p class="text-on-surface-variant mt-2">反覆迭代硬體設計，並進行感測器校準與模組驗證。</p>
+              </div>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-primary-container border-4 border-surface z-10 flex items-center justify-center">
+              <span class="text-on-primary-container text-xs font-bold">02</span>
+            </div>
+            <div class="flex-1 text-left hidden md:block">
+              <h5 class="text-2xl font-headline font-bold text-primary">原型開發</h5>
+              <p class="text-on-surface-variant mt-2">反覆迭代硬體設計，並進行感測器校準與模組驗證。</p>
+            </div>
+          </div>
+          <!-- Milestone 3 -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-right hidden md:block">
+              <h5 class="text-2xl font-headline font-bold text-primary">實測驗證</h5>
+              <p class="text-on-surface-variant mt-2">於校園餐廳與指定場域進行實際使用測試與數據蒐集。</p>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center">
+              <span class="text-on-primary text-xs font-bold">03</span>
+            </div>
+            <div class="flex-1 text-left">
+              <div class="md:hidden">
+                <h5 class="text-2xl font-headline font-bold text-primary">實測驗證</h5>
+                <p class="text-on-surface-variant mt-2">於校園餐廳與指定場域進行實際使用測試與數據蒐集。</p>
+              </div>
+              <span class="text-tertiary font-bold text-sm">第 7-9 個月</span>
+            </div>
+          </div>
+          <!-- Milestone 4 -->
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-right">
+              <span class="text-tertiary font-bold text-sm">第 10-12 個月</span>
+              <div class="md:hidden mt-2">
+                <h5 class="text-2xl font-headline font-bold text-primary">成果展覽</h5>
+                <p class="text-on-surface-variant mt-2">完整呈現 ReOil 專案成果與生態系統架構的最終展示。</p>
+              </div>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-secondary-container border-4 border-surface z-10 flex items-center justify-center">
+              <span class="text-on-secondary-container text-xs font-bold">04</span>
+            </div>
+            <div class="flex-1 text-left hidden md:block">
+              <h5 class="text-2xl font-headline font-bold text-primary">成果展覽</h5>
+              <p class="text-on-surface-variant mt-2">完整呈現 ReOil 專案成果與生態系統架構的最終展示。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary text-on-primary rounded-xl p-12 md:p-20 relative overflow-hidden" id="acknowledgements">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container opacity-20 -mr-20 -mt-20 rounded-full"></div>
+      <div class="relative z-10 max-w-3xl">
+        <h2 class="text-4xl font-headline font-bold mb-8">致謝</h2>
+        <p class="text-on-primary-container text-lg leading-relaxed mb-10">
+          衷心感謝國立臺北商業大學提供的創意研究資源與支持，使本專題得以順利完成。同時特別感謝技術合作夥伴、實驗室工作人員，以及參與早期測試的在地協力者。您們對永續未來的堅持，是驅動我們持續創新的最大動力。
+        </p>
+        <div class="flex flex-wrap gap-x-12 gap-y-6 opacity-80">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">學術支持</p>
+            <p class="font-headline font-medium">國立臺北商業大學</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">材料贊助</p>
+            <p class="font-headline font-medium">永續材料研究基金</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-widest text-primary-fixed mb-1">社區夥伴</p>
+            <p class="font-headline font-medium">在地協力單位</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="layout.js"></script>
+</body>
+
+</html>
