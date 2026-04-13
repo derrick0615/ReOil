@@ -129,7 +129,7 @@
         </div>
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
-          <a class="text-white/80 text-sm hover:text-white transition-colors" href="mailto:derrick.cy.huang@gmail.com">derrick.cy.huang@gmail.com</a>
+          <span class="text-white/80 text-sm hover:text-white transition-colors cursor-pointer" id="copy-email" onclick="navigator.clipboard.writeText('derrick.cy.huang@gmail.com').then(function(){var t=document.getElementById('email-toast');t.classList.remove('opacity-0','-translate-y-4','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(function(){t.classList.add('opacity-0','-translate-y-4');t.classList.remove('opacity-100','translate-y-0')},2000)})">derrick.cy.huang@gmail.com</span>
         </div>
       </div>
     </div>
@@ -139,13 +139,17 @@
     <div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="text-white/40 text-[10px] tracking-widest uppercase" data-i18n="footer.copyright">© 2025 ReOil Project · 國立臺北商業大學 創意科技與產品設計系 115級專題 · 指導教授：洪綾珠</p>
       <div class="flex gap-6">
-        <a class="text-white/40 hover:text-white transition-colors" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="material-symbols-outlined text-lg">photo_camera</span></a>
-        <a class="text-white/40 hover:text-white transition-colors" href="mailto:derrick.cy.huang@gmail.com" title="Email"><span class="material-symbols-outlined text-lg">mail</span></a>
-        <a class="text-white/40 hover:text-white transition-colors" href="resources.html#contact" title="聯絡我們"><span class="material-symbols-outlined text-lg">contact_page</span></a>
+        <a class="text-white/40 hover:text-white transition-colors" href="resources.html#contact" title="聯絡我們"><span class="material-symbols-outlined text-lg">mail</span></a>
+        <a class="text-white/40 hover:text-white transition-colors" href="about.html" title="關於我們"><span class="material-symbols-outlined text-lg">group</span></a>
       </div>
     </div>
   </div>
-</footer>`;
+</footer>
+<!-- Email Copy Toast -->
+<div id="email-toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg flex items-center gap-3 transition-all duration-500 opacity-0 -translate-y-4 pointer-events-none">
+  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+  <span class="font-medium">已複製 Email 地址！</span>
+</div>`;
 
   // Inject navbar at the beginning of body
   document.body.insertAdjacentHTML('afterbegin', navbarHTML);
