@@ -32,10 +32,10 @@
     // Awards
     'home.awards.label': { zh: 'Awards & Recognition', en: 'Awards & Recognition' },
     'home.awards.title': { zh: '獲獎肯定', en: 'Awards & Recognition' },
-    'home.award1.category': { zh: 'Product Design', en: 'Product Design' },
+    'home.award1.category': { zh: '產品設計', en: 'Product Design' },
     'home.award1.name': { zh: 'MUSE Design Awards', en: 'MUSE Design Awards' },
-    'home.award1.desc': { zh: 'Silver Winner - Recognizing excellence in sustainable home appliances and innovative industrial design approach for environmental protection.', en: 'Silver Winner - Recognizing excellence in sustainable home appliances and innovative industrial design approach for environmental protection.' },
-    'home.award1.year': { zh: '2026 Silver Winner', en: '2026 Silver Winner' },
+    'home.award1.desc': { zh: 'Silver Winner — 以永續家用電器的卓越設計與創新環保工業設計方法，獲得國際評審肯定。', en: 'Silver Winner - Recognizing excellence in sustainable home appliances and innovative industrial design approach for environmental protection.' },
+    'home.award1.year': { zh: '2026 銀獎', en: '2026 Silver Winner' },
     'home.award2.category': { zh: 'Academic Research', en: 'Academic Research' },
     'home.award2.name': { zh: '為桃園做研究', en: 'Taoyuan Research Program' },
     'home.award2.desc': { zh: '潛力研究獎 - 針對地方性水環境議題提出具備商業轉化與社會影響力之創新廢油解決方案，獲得高度學術肯定。', en: 'Potential Research Award - Recognized for proposing an innovative waste oil solution with commercial viability and social impact, addressing local water environment issues.' },
