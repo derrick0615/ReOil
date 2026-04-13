@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
-<html class="light" lang="zh-TW"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -69,216 +74,264 @@
             }
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             vertical-align: middle;
         }
+
         .serif-title {
             font-family: 'Times New Roman', Times, serif;
         }
+
         .tonal-gradient {
             background: linear-gradient(180deg, #f9faf5 0%, #f3f4ef 100%);
         }
     </style>
 </head>
+
 <body class="bg-background text-on-background font-body">
-<!-- Hero Section -->
-<section class="relative min-h-[921px] flex flex-col items-center justify-center pt-24 overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
-<div class="order-2 md:order-1">
-<span class="label-md tracking-[0.2em] text-primary font-bold uppercase mb-4 block" data-i18n="product.hero.label">Product Showcase</span>
-<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6 leading-[1.1]" data-i18n="product.hero.title">
-                    ReOil <br/>家用油汙過濾裝置
+    <!-- Hero Section -->
+    <section class="relative min-h-[921px] flex flex-col items-center justify-center pt-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="order-2 md:order-1">
+                <span class="label-md tracking-[0.2em] text-primary font-bold uppercase mb-4 block"
+                    data-i18n="product.hero.label">Product Showcase</span>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6 leading-[1.1]"
+                    data-i18n="product.hero.title">
+                    ReOil <br />家用油汙過濾裝置
                 </h1>
-<p class="text-xl md:text-2xl text-on-surface-variant font-light mb-8 max-w-lg" data-i18n="product.hero.desc">
+                <p class="text-xl md:text-2xl text-on-surface-variant font-light mb-8 max-w-lg"
+                    data-i18n="product.hero.desc">
                     三層模組化設計, 重力過濾 × 智慧感測
                 </p>
-<div class="flex gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-medium hover:bg-primary-container transition-all flex items-center gap-2 group">
+                <div class="flex gap-4">
+                    <button onclick="document.getElementById('structure').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-primary text-on-primary px-8 py-4 rounded-lg font-medium hover:bg-primary-container transition-all flex items-center gap-2 group">
                         <span data-i18n="product.hero.btn1">瞭解更多</span>
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-<button class="border-b border-primary text-primary px-4 py-4 font-medium hover:opacity-70 transition-opacity">
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                    <button onclick="document.getElementById('structure').scrollIntoView({ behavior: 'smooth' })"
+                        class="border-b border-primary text-primary px-4 py-4 font-medium hover:opacity-70 transition-opacity">
                         <span data-i18n="product.hero.btn2">了解運作原理</span>
                     </button>
-</div>
-</div>
-<div class="order-1 md:order-2 flex justify-center items-center">
-<div class="relative w-full aspect-square max-w-xl">
-<!-- Placeholder for Product Render -->
-<div class="absolute inset-0 bg-surface-container-highest rounded-full blur-3xl opacity-30"></div>
-<img alt="Product Render" class="relative z-10 w-full h-full object-contain drop-shadow-2xl" data-alt="Modern minimalist sleek cylindrical kitchen device in matte off-white and forest green, standing on a clean marble countertop, studio lighting, high-end appliance photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLLJu-ojTeEE3M0aum1zloOMNsyVDhCEfMHsvatMhOr1kffMeCJZClye0kBPlNTqU0D99EIolE-4m0kB0cSLqBOmCMp9l_wSSs4myBSqQkDYa2EKslDSfXz4oVKtKiVg0uRYXehyFVLwcwAInXhI2WffJSivf5ak8sJ9Bnal3RL9ts9Zq23qBYyIbHYj6Nwe9Wl95evLWf1VGhwyQxd1Kx8hgzVvBNRfzjlzqKwE9ZN0RKI42lE1Wu8PWcEq7Nv1VhTeBxuDpGHTli"/>
-</div>
-</div>
-</div>
-<!-- Decorative Background Element -->
-<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 rounded-l-[120px]"></div>
-</section>
-<!-- Product Naming / Philosophy -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8 text-center">
-<div class="inline-flex items-center gap-8 py-12 px-16 bg-surface-container-lowest rounded-2xl shadow-sm">
-<div class="text-right">
-<span class="serif-title text-4xl text-primary font-bold">Re</span>
-<p class="text-xs tracking-widest text-on-surface-variant mt-1" data-i18n="product.name.re">重新 / 回收</p>
-</div>
-<div class="w-[1px] h-12 bg-outline-variant opacity-30"></div>
-<span class="text-2xl font-light text-on-surface-variant">+</span>
-<div class="w-[1px] h-12 bg-outline-variant opacity-30"></div>
-<div class="text-left">
-<span class="serif-title text-4xl text-primary font-bold">Oil</span>
-<p class="text-xs tracking-widest text-on-surface-variant mt-1" data-i18n="product.name.oil">油脂</p>
-</div>
-<div class="hidden md:flex items-center mx-4">
-<span class="text-2xl font-light text-on-surface-variant">=</span>
-</div>
-<div class="hidden md:block">
-<span class="serif-title text-5xl text-primary font-black tracking-tighter">ReOil</span>
-</div>
-</div>
-</div>
-</section>
-<!-- 3-Layer Exploded View -->
-<section class="py-32 bg-background relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-24">
-<h2 class="text-4xl font-bold tracking-tight mb-4" data-i18n="product.structure.title">模組化結構解析</h2>
-<p class="text-on-surface-variant" data-i18n="product.structure.desc">三層核心系統,打造高效廚房生態</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<!-- Exploded Image Simulation -->
-<div class="relative space-y-8 flex flex-col items-center">
-<!-- Layer 1 Visualization -->
-<div class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
-<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">1</span>
-<span class="font-bold text-lg" data-i18n="product.layer1">Layer 1: 廚餘過濾層</span>
-</div>
-<div class="w-1 h-8 bg-primary/20"></div>
-<!-- Layer 2 Visualization -->
-<div class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
-<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">2</span>
-<span class="font-bold text-lg" data-i18n="product.layer2">Layer 2: 油水分離層</span>
-</div>
-<div class="w-1 h-8 bg-primary/20"></div>
-<!-- Layer 3 Visualization -->
-<div class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
-<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">3</span>
-<span class="font-bold text-lg" data-i18n="product.layer3">Layer 3: 廢水收集層</span>
-</div>
-</div>
-<!-- Image Placeholder Containers -->
-<div class="space-y-12">
-<div class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
-<div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
-<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
-<span class="material-symbols-outlined text-5xl">image</span>
-</div>
-<div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm" data-i18n="product.layer1">Layer 1: 廚餘過濾層</div>
-</div>
-<div class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
-<div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
-<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
-<span class="material-symbols-outlined text-5xl">image</span>
-</div>
-<div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm" data-i18n="product.layer2">Layer 2: 油水分離層</div>
-</div>
-<div class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
-<div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
-<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
-<span class="material-symbols-outlined text-5xl">image</span>
-</div>
-<div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm" data-i18n="product.layer3">Layer 3: 廢水收集層</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Core Tech - Coconut Fiber -->
-<section class="py-32 bg-primary text-on-primary">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div class="relative rounded-3xl overflow-hidden aspect-video shadow-2xl">
-<img alt="Coconut Fiber" class="w-full h-full object-cover" data-alt="Microscopic extreme close-up of organic coconut fiber textures, warm golden and earthy brown tones, highly detailed fibers, macro photography with shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyPWpjJfJahlmGssuxK8DOtJx7yBeuUdzDKdIdnYq-Fm8GkjqRb1kPPjkBQwbu-srFjeprXz-qTr_tRut0nA9ofXFbjbaF82ZCC8FBozh5idd8l7RL03UzQsRHW_Lk0rL7SvyReRGM3qGrj1RVIddMFRjJO-lkqizNMHJ8aENjIPMmNoK9dXKhm60TzD-IuXR8p7CW8f6NiSQVv0sCK9jhCc60PAGNTjlP3oJKD-AX5Oigd30JdEuSNBEeiCsJPlIWQe047ZgG9Tbw"/>
-<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
-</div>
-<div>
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block" data-i18n="product.tech.label">Exclusive Tech</span>
-<h2 class="serif-title text-4xl md:text-5xl font-bold mb-8 leading-tight" data-i18n="product.tech.title">核心技術 — <br/>天然椰殼纖維</h2>
-<p class="text-xl text-on-primary/80 leading-relaxed mb-8" data-i18n="product.tech.desc1">
-                    我們發掘了自然界最高效的過濾媒介：<br/>
-<span class="text-secondary-fixed font-bold">親油疏水 (Oleophilic &amp; Hydrophobic)</span> 特性。
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center items-center">
+                <div class="relative w-full aspect-square max-w-xl">
+                    <!-- Placeholder for Product Render -->
+                    <div class="absolute inset-0 bg-surface-container-highest rounded-full blur-3xl opacity-30"></div>
+                    <img alt="Product Render" class="relative z-10 w-full h-full object-contain drop-shadow-2xl"
+                        data-alt="Modern minimalist sleek cylindrical kitchen device in matte off-white and forest green, standing on a clean marble countertop, studio lighting, high-end appliance photography."
+                        src="images/exploded.png" />
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 rounded-l-[120px]"></div>
+    </section>
+    <!-- Product Naming / Philosophy -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <div class="inline-flex items-center gap-8 py-12 px-16 bg-surface-container-lowest rounded-2xl shadow-sm">
+                <div class="text-right">
+                    <span class="serif-title text-4xl text-primary font-bold">Re</span>
+                    <p class="text-xs tracking-widest text-on-surface-variant mt-1" data-i18n="product.name.re">重新 / 回收
+                    </p>
+                </div>
+                <div class="w-[1px] h-12 bg-outline-variant opacity-30"></div>
+                <span class="text-2xl font-light text-on-surface-variant">+</span>
+                <div class="w-[1px] h-12 bg-outline-variant opacity-30"></div>
+                <div class="text-left">
+                    <span class="serif-title text-4xl text-primary font-bold">Oil</span>
+                    <p class="text-xs tracking-widest text-on-surface-variant mt-1" data-i18n="product.name.oil">油脂</p>
+                </div>
+                <div class="hidden md:flex items-center mx-4">
+                    <span class="text-2xl font-light text-on-surface-variant">=</span>
+                </div>
+                <div class="hidden md:block">
+                    <span class="serif-title text-5xl text-primary font-black tracking-tighter">ReOil</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3-Layer Exploded View -->
+    <section id="structure" class="py-32 bg-background relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl font-bold tracking-tight mb-4" data-i18n="product.structure.title">模組化結構解析</h2>
+                <p class="text-on-surface-variant" data-i18n="product.structure.desc">三層核心系統,打造高效廚房生態</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Exploded Image Simulation -->
+                <div class="relative space-y-8 flex flex-col items-center">
+                    <!-- Layer 1 Visualization -->
+                    <div
+                        class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">1</span>
+                        <span class="font-bold text-lg" data-i18n="product.layer1">Layer 1: 廚餘過濾層</span>
+                    </div>
+                    <div class="w-1 h-8 bg-primary/20"></div>
+                    <!-- Layer 2 Visualization -->
+                    <div
+                        class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">2</span>
+                        <span class="font-bold text-lg" data-i18n="product.layer2">Layer 2: 油水分離層</span>
+                    </div>
+                    <div class="w-1 h-8 bg-primary/20"></div>
+                    <!-- Layer 3 Visualization -->
+                    <div
+                        class="w-full max-w-sm aspect-[4/1] bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-lg flex items-center px-8 group hover:scale-105 transition-transform duration-500">
+                        <span
+                            class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mr-6">3</span>
+                        <span class="font-bold text-lg" data-i18n="product.layer3">Layer 3: 廢水收集層</span>
+                    </div>
+                </div>
+                <!-- Image Placeholder Containers -->
+                <div class="space-y-12">
+                    <div
+                        class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
+                        <div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
+                            <span class="material-symbols-outlined text-5xl">image</span>
+                        </div>
+                        <div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm"
+                            data-i18n="product.layer1">Layer 1: 廚餘過濾層</div>
+                    </div>
+                    <div
+                        class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
+                        <div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
+                            <span class="material-symbols-outlined text-5xl">image</span>
+                        </div>
+                        <div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm"
+                            data-i18n="product.layer2">Layer 2: 油水分離層</div>
+                    </div>
+                    <div
+                        class="overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 shadow-sm aspect-[16/7] relative group">
+                        <div class="absolute inset-0 bg-surface-container-highest animate-pulse opacity-20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-on-surface-variant/40">
+                            <span class="material-symbols-outlined text-5xl">image</span>
+                        </div>
+                        <div class="absolute bottom-4 left-6 bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold text-primary shadow-sm"
+                            data-i18n="product.layer3">Layer 3: 廢水收集層</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Core Tech - Coconut Fiber -->
+    <section class="py-32 bg-primary text-on-primary">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="relative rounded-3xl overflow-hidden aspect-video shadow-2xl">
+                <img alt="Coconut Fiber" class="w-full h-full object-cover"
+                    data-alt="Microscopic extreme close-up of organic coconut fiber textures, warm golden and earthy brown tones, highly detailed fibers, macro photography with shallow depth of field."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyPWpjJfJahlmGssuxK8DOtJx7yBeuUdzDKdIdnYq-Fm8GkjqRb1kPPjkBQwbu-srFjeprXz-qTr_tRut0nA9ofXFbjbaF82ZCC8FBozh5idd8l7RL03UzQsRHW_Lk0rL7SvyReRGM3qGrj1RVIddMFRjJO-lkqizNMHJ8aENjIPMmNoK9dXKhm60TzD-IuXR8p7CW8f6NiSQVv0sCK9jhCc60PAGNTjlP3oJKD-AX5Oigd30JdEuSNBEeiCsJPlIWQe047ZgG9Tbw" />
+                <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+            </div>
+            <div>
+                <span
+                    class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block"
+                    data-i18n="product.tech.label">Exclusive Tech</span>
+                <h2 class="serif-title text-4xl md:text-5xl font-bold mb-8 leading-tight"
+                    data-i18n="product.tech.title">核心技術 — <br />天然椰殼纖維</h2>
+                <p class="text-xl text-on-primary/80 leading-relaxed mb-8" data-i18n="product.tech.desc1">
+                    我們發掘了自然界最高效的過濾媒介：<br />
+                    <span class="text-secondary-fixed font-bold">親油疏水 (Oleophilic &amp; Hydrophobic)</span> 特性。
                 </p>
-<p class="text-lg text-on-primary/70 leading-relaxed" data-i18n="product.tech.desc2">
+                <p class="text-lg text-on-primary/70 leading-relaxed" data-i18n="product.tech.desc2">
                     特殊的多孔纖維結構，讓油脂在接觸瞬間被牢牢吸附與鎖定，同時允許清水順利穿透流動。這種源自大自然的智慧，比合成材料更環保、更高效。
                 </p>
-</div>
-</div>
-</section>
-<!-- Smart Light Indicator -->
-<section class="py-32 bg-surface-container-lowest">
-<div class="max-w-6xl mx-auto px-8 text-center">
-<h2 class="text-3xl font-bold mb-4" data-i18n="product.led.title">智慧燈語系統</h2>
-<p class="text-on-surface-variant mb-16" data-i18n="product.led.desc">一眼掌握 ReOil 的運作狀態，無需猜測，生活更從容。</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Status 1 -->
-<div class="flex flex-col gap-6 group">
-<div class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
-<div class="absolute inset-0 bg-[#FEDD00]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
-<div class="absolute top-4 right-4 w-4 h-4 bg-[#FEDD00] rounded-full shadow-[0_0_15px_rgba(254,221,0,0.6)]"></div>
-</div>
-<div class="text-center">
-<h4 class="text-xl font-bold mb-2" data-i18n="product.led.yellow.title">🟡 黃燈 — 運作中</h4>
-<p class="text-on-surface-variant text-sm" data-i18n="product.led.yellow.desc">(感測到湯水通過)</p>
-</div>
-</div>
-<!-- Status 2 -->
-<div class="flex flex-col gap-6 group">
-<div class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
-<div class="absolute inset-0 bg-[#4CAF50]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
-<div class="absolute top-4 right-4 w-4 h-4 bg-[#4CAF50] rounded-full shadow-[0_0_15px_rgba(76,175,80,0.6)]"></div>
-</div>
-<div class="text-center">
-<h4 class="text-xl font-bold mb-2" data-i18n="product.led.green.title">🟢 綠燈 — 狀態良好</h4>
-<p class="text-on-surface-variant text-sm" data-i18n="product.led.green.desc">(濾芯尚有空間)</p>
-</div>
-</div>
-<!-- Status 3 -->
-<div class="flex flex-col gap-6 group">
-<div class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
-<div class="absolute inset-0 bg-[#F44336]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
-<div class="absolute top-4 right-4 w-4 h-4 bg-[#F44336] rounded-full shadow-[0_0_15px_rgba(244,67,54,0.6)]"></div>
-</div>
-<div class="text-center">
-<h4 class="text-xl font-bold mb-2" data-i18n="product.led.red.title">🔴 紅燈 — 更換提醒</h4>
-<p class="text-on-surface-variant text-sm" data-i18n="product.led.red.desc">(濾芯已飽和)</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Bottom CTA / Sustainability Note -->
-<section class="py-24 bg-surface-container-low border-t border-outline-variant/15">
-<div class="max-w-4xl mx-auto px-8 text-center">
-<div class="inline-block p-4 rounded-full bg-primary/5 text-primary mb-8">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">eco</span>
-</div>
-<h3 class="text-3xl font-bold mb-6" data-i18n="product.cta.title">為您的廚房，也為這座星球。</h3>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-10" data-i18n="product.cta.desc">
+            </div>
+        </div>
+    </section>
+    <!-- Smart Light Indicator -->
+    <section class="py-32 bg-surface-container-lowest">
+        <div class="max-w-6xl mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4" data-i18n="product.led.title">智慧燈語系統</h2>
+            <p class="text-on-surface-variant mb-16" data-i18n="product.led.desc">一眼掌握 ReOil 的運作狀態，無需猜測，生活更從容。</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Status 1 -->
+                <div class="flex flex-col gap-6 group">
+                    <div
+                        class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 bg-[#FEDD00]/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
+                        <div
+                            class="absolute top-4 right-4 w-4 h-4 bg-[#FEDD00] rounded-full shadow-[0_0_15px_rgba(254,221,0,0.6)]">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-bold mb-2" data-i18n="product.led.yellow.title">黃燈 — 運作中</h4>
+                        <p class="text-on-surface-variant text-sm" data-i18n="product.led.yellow.desc">(感測到湯水通過)</p>
+                    </div>
+                </div>
+                <!-- Status 2 -->
+                <div class="flex flex-col gap-6 group">
+                    <div
+                        class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 bg-[#4CAF50]/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
+                        <div
+                            class="absolute top-4 right-4 w-4 h-4 bg-[#4CAF50] rounded-full shadow-[0_0_15px_rgba(76,175,80,0.6)]">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-bold mb-2" data-i18n="product.led.green.title">綠燈 — 狀態良好</h4>
+                        <p class="text-on-surface-variant text-sm" data-i18n="product.led.green.desc">(濾芯尚有空間)</p>
+                    </div>
+                </div>
+                <!-- Status 3 -->
+                <div class="flex flex-col gap-6 group">
+                    <div
+                        class="w-full aspect-[4/3] rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 bg-[#F44336]/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-on-surface-variant/30">image</span>
+                        <div
+                            class="absolute top-4 right-4 w-4 h-4 bg-[#F44336] rounded-full shadow-[0_0_15px_rgba(244,67,54,0.6)]">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-bold mb-2" data-i18n="product.led.red.title">紅燈 — 更換提醒</h4>
+                        <p class="text-on-surface-variant text-sm" data-i18n="product.led.red.desc">(濾芯已飽和)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bottom CTA / Sustainability Note -->
+    <section class="py-24 bg-surface-container-low border-t border-outline-variant/15">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <div class="inline-block p-4 rounded-full bg-primary/5 text-primary mb-8">
+                <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+            </div>
+            <h3 class="text-3xl font-bold mb-6" data-i18n="product.cta.title">為您的廚房，也為這座星球。</h3>
+            <p class="text-on-surface-variant text-lg leading-relaxed mb-10" data-i18n="product.cta.desc">
                 每一次過濾，都是在減少海洋的油脂負擔。ReOil 不僅僅是一個裝置，它是您對未來永續生活的承諾。
             </p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold hover:opacity-90 transition-opacity">
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button
+                    class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold hover:opacity-90 transition-opacity">
                     <span data-i18n="product.cta.btn1">認識 ReOil 專案</span>
                 </button>
-<button class="bg-surface-container-lowest text-primary border border-primary/20 px-10 py-4 rounded-lg font-bold hover:bg-surface-container-high transition-colors">
+                <button
+                    class="bg-surface-container-lowest text-primary border border-primary/20 px-10 py-4 rounded-lg font-bold hover:bg-surface-container-high transition-colors">
                     <span data-i18n="product.cta.btn2">查看技術手冊</span>
                 </button>
-</div>
-</div>
-</section>
-<script src="i18n.js"></script>
-<script src="layout.js"></script>
-</body></html>
+            </div>
+        </div>
+    </section>
+    <script src="i18n.js"></script>
+    <script src="layout.js"></script>
+</body>
+
+</html>
