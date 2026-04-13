@@ -129,7 +129,7 @@
         </div>
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
-          <span class="text-white/80 text-sm hover:text-white transition-colors cursor-pointer" id="copy-email" onclick="navigator.clipboard.writeText('derrick.cy.huang@gmail.com').then(function(){var t=document.getElementById('email-toast');t.classList.remove('opacity-0','-translate-y-4','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(function(){t.classList.add('opacity-0','-translate-y-4');t.classList.remove('opacity-100','translate-y-0')},2000)})">derrick.cy.huang@gmail.com</span>
+          <span class="text-white/80 text-sm hover:text-white transition-colors cursor-pointer" id="copy-email" onclick="navigator.clipboard.writeText('derrick.cy.huang@gmail.com').then(function(){var t=document.getElementById('email-toast');t.classList.add('transition-all','duration-500');t.classList.remove('opacity-0','-translate-y-4','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(function(){t.classList.add('opacity-0','-translate-y-4');t.classList.remove('opacity-100','translate-y-0')},2000)})">derrick.cy.huang@gmail.com</span>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
   </div>
 </footer>
 <!-- Email Copy Toast -->
-<div id="email-toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg flex items-center gap-3 transition-all duration-500 opacity-0 -translate-y-4 pointer-events-none">
+<div id="email-toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg flex items-center gap-3 opacity-0 -translate-y-4 pointer-events-none">
   <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
   <span class="font-medium">已複製 Email 地址！</span>
 </div>`;
