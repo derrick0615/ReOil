@@ -246,6 +246,7 @@
 </div>
 <div class="lg:col-span-7 bg-surface rounded-2xl p-8 md:p-10">
 <form action="https://formspree.io/f/xqewzrnn" method="POST" class="space-y-6">
+<input type="hidden" name="_next" value="https://derrick0615.github.io/ReOil/resources.html?submitted=true"/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">姓名</label>
@@ -306,5 +307,22 @@
 </div>
 </section>
 </main>
+<!-- Success Toast -->
+<div id="success-toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-8 py-4 rounded-xl shadow-lg flex items-center gap-3 transition-all duration-500 opacity-0 -translate-y-4 pointer-events-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">感謝您的來信，我們將盡快與您聯繫！</span>
+</div>
+<script>
+if (new URLSearchParams(window.location.search).has('submitted')) {
+    const toast = document.getElementById('success-toast');
+    toast.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 5000);
+    history.replaceState(null, '', window.location.pathname);
+}
+</script>
 <script src="layout.js"></script>
 </body></html>
