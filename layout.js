@@ -165,6 +165,13 @@
     window.ReOilI18n.applyTranslations(window.ReOilI18n.getLang());
   }
 
+  // Cloudflare Web Analytics
+  const cfScript = document.createElement('script');
+  cfScript.defer = true;
+  cfScript.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  cfScript.dataset.cfBeacon = '{"token": "be3930d207e242c88d1120bce18a2f3f"}';
+  document.body.appendChild(cfScript);
+
   // Mobile menu toggle
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
