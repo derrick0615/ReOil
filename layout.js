@@ -165,6 +165,16 @@
     window.ReOilI18n.applyTranslations(window.ReOilI18n.getLang());
   }
 
+  // Google Analytics (GA4)
+  const gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-QSJ8G1NM8Q';
+  document.head.appendChild(gaScript);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QSJ8G1NM8Q');
+
   // Cloudflare Web Analytics
   const cfScript = document.createElement('script');
   cfScript.defer = true;
