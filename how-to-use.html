@@ -130,8 +130,8 @@
 <div class="w-full md:w-1/2 order-1 md:order-2">
 <div class="relative group">
 <div class="absolute inset-0 bg-primary/5 rounded-[2.5rem] rotate-3 transition-transform group-hover:rotate-0 duration-700"></div>
-<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant opacity-40">image</span>
+<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest">
+<img src="images/step1.png" alt="Step 1 — 傾倒與初步分離" class="w-full h-full object-cover" loading="lazy" />
 </div>
 </div>
 </div>
@@ -141,8 +141,8 @@
 <div class="w-full md:w-1/2">
 <div class="relative group">
 <div class="absolute inset-0 bg-secondary-container/10 rounded-[2.5rem] -rotate-3 transition-transform group-hover:rotate-0 duration-700"></div>
-<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant opacity-40">image</span>
+<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest">
+<img src="images/step2.png" alt="Step 2 — 自動過濾與感測喚醒" class="w-full h-full object-cover" loading="lazy" />
 <div class="absolute bottom-6 right-6 bg-secondary-container/90 backdrop-blur-md text-on-secondary-container px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg">
 <span class="w-2.5 h-2.5 rounded-full bg-yellow-500 animate-pulse"></span> <span data-i18n="howto.sensing">智能感測中</span>
                                 </div>
@@ -177,8 +177,8 @@
 <div class="w-full md:w-1/2 order-1 md:order-2">
 <div class="relative group">
 <div class="absolute inset-0 bg-primary/5 rounded-[2.5rem] rotate-3 transition-transform group-hover:rotate-0 duration-700"></div>
-<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant opacity-40">image</span>
+<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest">
+<img src="images/step3.png" alt="Step 3 — 直覺燈號判讀" class="w-full h-full object-cover" loading="lazy" />
 </div>
 </div>
 </div>
@@ -188,8 +188,8 @@
 <div class="w-full md:w-1/2">
 <div class="relative group">
 <div class="absolute inset-0 bg-accent-muted/10 rounded-[2.5rem] -rotate-3 transition-transform group-hover:rotate-0 duration-700"></div>
-<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant opacity-40">image</span>
+<div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] shadow-2xl bg-surface-container-highest">
+<img src="images/step4.png" alt="Step 4 — 清理與耗材更新" class="w-full h-full object-cover" loading="lazy" />
 </div>
 </div>
 </div>
@@ -215,8 +215,8 @@
 <!-- Case 1 -->
 <div class="relative flex flex-col md:flex-row items-center">
 <div class="w-full md:w-7/12 relative z-10">
-<div class="overflow-hidden rounded-[3rem] shadow-2xl bg-surface-container-highest h-[500px] flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant opacity-40">image</span>
+<div class="overflow-hidden rounded-[3rem] shadow-2xl bg-surface-container-highest h-[500px]">
+<img src="images/scenario_a.png" alt="Scenario A — 日常使用情境" class="w-full h-full object-cover" loading="lazy" />
 </div>
 </div>
 <div class="w-full md:w-6/12 mt-[-60px] md:mt-0 md:ml-[-10%] bg-surface border border-outline-variant/30 p-12 md:p-20 rounded-[2.5rem] shadow-xl relative z-20">
@@ -339,12 +339,9 @@ document.querySelectorAll('[data-faq-btn]').forEach(function(btn) {
             準備好開始您的<br/><span class="text-primary italic">意識廚房</span>體驗了嗎？
         </h2>
 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-<button class="w-full sm:w-auto px-12 py-5 bg-primary text-on-primary rounded-full font-bold shadow-[0_20px_40px_rgba(55,99,74,0.2)] hover:shadow-none hover:translate-y-1 transition-all duration-300">
-                <span data-i18n="howto.final.btn1">認識 ReOil 專案</span>
-            </button>
-<button class="w-full sm:w-auto px-12 py-5 bg-white text-primary border border-primary/10 rounded-full font-bold hover:bg-primary/5 transition-all duration-300">
+<a href="resources.html#contact" class="w-full sm:w-auto px-12 py-5 bg-primary text-on-primary rounded-full font-bold shadow-[0_20px_40px_rgba(55,99,74,0.2)] hover:shadow-none hover:translate-y-1 transition-all duration-300 text-center no-underline">
                 <span data-i18n="howto.final.btn2">聯繫我們</span>
-            </button>
+            </a>
 </div>
 </section>
 <script src="i18n.js"></script>
