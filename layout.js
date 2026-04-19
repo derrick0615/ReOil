@@ -129,7 +129,7 @@
         </div>
         <div class="flex items-center gap-3">
           <span class="material-symbols-outlined text-white/60 text-lg">mail</span>
-          <span class="text-white/80 text-sm hover:text-white transition-colors cursor-pointer" id="copy-email" onclick="navigator.clipboard.writeText('derrick.cy.huang@gmail.com').then(function(){var t=document.getElementById('email-toast');t.classList.add('transition-all','duration-500');t.classList.remove('opacity-0','-translate-y-4','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(function(){t.classList.add('opacity-0','-translate-y-4');t.classList.remove('opacity-100','translate-y-0')},2000)})">derrick.cy.huang@gmail.com</span>
+          <span class="text-white/80 text-sm hover:text-white transition-colors cursor-pointer" id="copy-email" onclick="navigator.clipboard.writeText('coconut@reoildesign.com').then(function(){var t=document.getElementById('email-toast');t.classList.add('transition-all','duration-500');t.classList.remove('opacity-0','-translate-y-4','pointer-events-none');t.classList.add('opacity-100','translate-y-0');setTimeout(function(){t.classList.add('opacity-0','-translate-y-4');t.classList.remove('opacity-100','translate-y-0')},2000)})">coconut@reoildesign.com</span>
         </div>
       </div>
     </div>
